@@ -1,0 +1,11 @@
+[
+ {
+  "run": "candles_SOLUSDT_fast",
+  "engines": [
+   "backtesting.py",
+   "vectorbt"
+  ],
+  "trade": 172,
+  "reason": "the take profit is exactly 78.17 and the 12:00 candle high is exactly 78.17. Danix and the reference compute TP = 78.0 + 0.17 = 78.17 and fill it (high >= TP); backtesting.py (prices scaled by 1e8) and vectorbt (TP as a fraction of the entry) get a level 1e-14 above 78.17 from float rounding and fill it one candle later at the same price. Same exit price and PnL."
+ }
+]

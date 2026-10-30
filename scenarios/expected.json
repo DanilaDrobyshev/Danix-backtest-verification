@@ -1,0 +1,89 @@
+{
+ "_rules": "Entry: market long at the close of candle #2 (100.0), quantity = 1000 USDT / 100 = 10. TP = 100 x 1.02 = 102, SL = 100 x 0.98 = 98. Taker fee 0.055% of notional on entry and on exit. PnL = (exit - entry) x qty - entry fee - exit fee.",
+ "S01_take_profit": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 102,
+    "quantity": 10,
+    "pnl": 18.889,
+    "how": "candle #4 high 102.5 >= TP 102, open 100.3 below TP -> fill at TP: 20 - 0.55 - 0.561 = 18.889"
+   }
+  ]
+ },
+ "S02_stop_loss": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 98,
+    "quantity": 10,
+    "pnl": -21.089,
+    "how": "candle #4 low 97.5 <= SL 98 -> fill at SL: -20 - 0.55 - 0.539 = -21.089"
+   }
+  ]
+ },
+ "S03_tp_and_sl_same_candle": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 98,
+    "quantity": 10,
+    "pnl": -21.089,
+    "how": "candle #4 touches both 103 and 97; candles have no order inside -> SL is assumed first (conservative): -21.089"
+   }
+  ]
+ },
+ "S04_gap_through_stop": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 96,
+    "quantity": 10,
+    "pnl": -41.078,
+    "how": "candle #4 opens at 96, below SL 98 -> fill at the open, not at 98: -40 - 0.55 - 0.528 = -41.078"
+   }
+  ]
+ },
+ "S05_gap_through_take_profit": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 104,
+    "quantity": 10,
+    "pnl": 38.878,
+    "how": "candle #4 opens at 104, above TP 102 -> fill at the open: 40 - 0.55 - 0.572 = 38.878"
+   }
+  ]
+ },
+ "S06_position_open_at_end": {
+  "trades": [],
+  "open_positions": 1,
+  "commission_paid": 0.55,
+  "unrealized_pnl": 4.45,
+  "how": "neither 102 nor 98 is touched; the position stays open. Danix reports unrealized PnL net of the entry fee already paid: (100.5 - 100) x 10 - 0.55 = 4.45"
+ },
+ "S07_liquidation_x10": {
+  "trades": [
+   {
+    "open_t": 1767232800000,
+    "close_t": 1767240000000,
+    "entry": 100,
+    "exit": 90.655,
+    "quantity": 10,
+    "pnl": -100.55,
+    "how": "leverage 10, SL moved to 50. Liquidation price = 100 x (1 - (1/10 - MMR 0.5% - taker 0.055% - insurance 0.1%)) = 90.655. Candle #4 low 89 <= 90.655 -> the whole margin (1000/10 = 100) is lost plus the entry fee 0.55 = -100.55; no exit fee"
+   }
+  ],
+  "liquidations": 1
+ }
+}

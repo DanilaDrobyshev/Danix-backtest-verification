@@ -1,0 +1,964 @@
+{
+    "connections": [
+        {
+            "from_pin": "OutPinEntry",
+            "to_pin": "cb68dadf-6335-7043-04a6-4c51d3c5abcf"
+        },
+        {
+            "from_pin": "41c50dbf-9b75-9d04-405f-17f6dff4c140",
+            "to_pin": "108aad94-293d-4d49-ee46-c27b7c6a2324"
+        },
+        {
+            "from_pin": "18845538-7b04-a379-3bad-5c56fec35299",
+            "to_pin": "9bd7b880-a8c0-7a0d-7cc6-b49a2271049c"
+        },
+        {
+            "from_pin": "16711cd0-39f5-e016-4327-541c2b316ac2",
+            "to_pin": "c46c6c32-712c-c8b0-e9ff-027b55bdbae6"
+        },
+        {
+            "from_pin": "aeed9d48-2311-b78e-8586-2907b635ac3e",
+            "to_pin": "8f537670-6390-d6da-2cef-e6cc6e899842"
+        },
+        {
+            "from_pin": "07613aef-b45e-5d56-3b69-2bece5aad7cc",
+            "to_pin": "27cea2aa-6084-75f4-9569-52049afaa445"
+        },
+        {
+            "from_pin": "a8ef5e71-f7a5-e0f5-c4e3-c379cfca9c3e",
+            "to_pin": "2a1d8ce1-f3f5-8126-22a5-b47dffff04eb"
+        },
+        {
+            "from_pin": "68577b77-c9fe-e59b-1855-888af90f7307",
+            "to_pin": "d28353b1-8ffa-90ee-589a-26703e69c95c"
+        },
+        {
+            "from_pin": "518131d8-72f7-6b51-cb39-3a52d20d7922",
+            "to_pin": "d33ebfe3-923d-5607-57e8-ed931fbac844"
+        },
+        {
+            "from_pin": "33e87e50-29ae-f6ac-663d-7199ed1c847f",
+            "to_pin": "3c79a949-1f2d-9dd4-0581-5ad1f4a669e7"
+        },
+        {
+            "from_pin": "b79d67a8-cead-cf97-5b88-85ca1dee5b6e",
+            "to_pin": "121a9278-9353-c1db-79ae-3799a78f1edb"
+        },
+        {
+            "from_pin": "a6fbb260-9aff-7181-2939-799ba6c21298",
+            "to_pin": "006f72e8-f3f2-97ed-b972-1f714a25bbc0"
+        },
+        {
+            "from_pin": "d9381b2b-7812-df29-5697-91691fe4f0d9",
+            "to_pin": "7db6eba1-9f48-8684-da32-8755b7a58c07"
+        },
+        {
+            "from_pin": "625e44b8-e889-3202-82aa-312ea4c23c6e",
+            "to_pin": "d4062857-a494-6ee2-3bac-1c4be8be0d01"
+        },
+        {
+            "from_pin": "b0948bd0-d128-a119-425b-6767a4d77a93",
+            "to_pin": "132e353c-dba6-ef58-54c9-4714d733a63b"
+        },
+        {
+            "from_pin": "457a9557-66a2-09f9-c4a3-e708c258dc04",
+            "to_pin": "fbddca55-d062-9e7c-ea97-0e232d502fc6"
+        },
+        {
+            "from_pin": "b0948bd0-d128-a119-425b-6767a4d77a93",
+            "to_pin": "1636d228-6b5c-575b-dd90-ea420aaa9570"
+        },
+        {
+            "from_pin": "625ccfe0-8d49-1eb3-a0e8-8c9fef422359",
+            "to_pin": "4045a1c8-154c-4a88-ea10-e9f88fe28c5b"
+        },
+        {
+            "from_pin": "c797b762-2c06-6e85-a019-7471bc3577fb",
+            "to_pin": "8df09cf7-4851-79c2-96dc-3d0b77daced3"
+        },
+        {
+            "from_pin": "d99e93e8-5ef8-1299-1b54-8d788caccc61",
+            "to_pin": "c48b6746-3c8a-bee5-2a9e-f3128f410954"
+        },
+        {
+            "from_pin": "f1acbfa9-88c7-c584-6c97-352dc41ec2e6",
+            "to_pin": "f356839f-1442-b6b6-c4cd-a91ad5aa767b"
+        }
+    ],
+    "description": "Verification strategy for hand-checked scenarios. One market long at the close of the candle whose Index equals Entry Index (Position USDT / close, Leverage), then TP = fill x TP Mult and SL = fill x SL Mult. Nothing else: every fill can be computed on paper.",
+    "nodes": [
+        {
+            "data": null,
+            "guid": "013af16f-1599-cfdd-f8eb-75138ebbcfb8",
+            "inputs": [
+                {
+                    "guid": "cb68dadf-6335-7043-04a6-4c51d3c5abcf",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                }
+            ],
+            "name": "Get Position",
+            "outputs": [
+                {
+                    "guid": "41c50dbf-9b75-9d04-405f-17f6dff4c140",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "18845538-7b04-a379-3bad-5c56fec35299",
+                    "name": "Has Position",
+                    "type": 4
+                },
+                {
+                    "guid": "895eaaf0-6c65-b59a-e18d-5bb65f9ba7da",
+                    "name": "Is Long",
+                    "type": 4
+                },
+                {
+                    "guid": "ddd4ed06-c05e-8dd4-eab2-e30f14c8fa09",
+                    "name": "Size",
+                    "type": 3
+                },
+                {
+                    "guid": "088efd78-5fbd-68e3-940f-226d5048d0be",
+                    "name": "Avg Price",
+                    "type": 3
+                },
+                {
+                    "guid": "4d5ce7a7-5acc-3836-8e74-e8610da17995",
+                    "name": "Mark Price",
+                    "type": 3
+                },
+                {
+                    "guid": "f8c58864-f12d-d1f8-5e90-b753c8452b61",
+                    "name": "Liq Price",
+                    "type": 3
+                },
+                {
+                    "guid": "ff67bf35-c2c7-2507-bb99-aaae0c7a134a",
+                    "name": "Unrealised PnL",
+                    "type": 3
+                },
+                {
+                    "guid": "c151cd8b-f2e9-e8a6-f250-4b40c6feb270",
+                    "name": "Leverage",
+                    "type": 3
+                },
+                {
+                    "guid": "56063b9c-2ed3-98f0-0b00-0235c9ad21a3",
+                    "name": "Take Profit",
+                    "type": 3
+                },
+                {
+                    "guid": "d10ce21b-8a8a-1fd1-fd5a-a5cbf6902da8",
+                    "name": "Stop Loss",
+                    "type": 3
+                },
+                {
+                    "guid": "c5ffaedf-8312-b2df-1667-b6f966a5a0c7",
+                    "name": "Success",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 350.0,
+                "y": 100.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 320.0
+            },
+            "type": "GetPositionNode"
+        },
+        {
+            "data": null,
+            "guid": "14b6f106-8d20-ad32-f837-057c073c6ae1",
+            "inputs": [],
+            "name": "Get Current Candle",
+            "outputs": [
+                {
+                    "guid": "d00f3fb5-ccfe-10c3-0971-766ca3131c7c",
+                    "name": "Index",
+                    "type": 1
+                },
+                {
+                    "guid": "bf2bda61-c57e-841f-561f-3b636429a9e8",
+                    "name": "Timestamp",
+                    "type": 1
+                },
+                {
+                    "guid": "d153460c-7442-b754-fc88-cdbab3ef5b07",
+                    "name": "Open",
+                    "type": 3
+                },
+                {
+                    "guid": "c256ca71-7a67-fcc1-6d33-8b20cf9dd69a",
+                    "name": "High",
+                    "type": 3
+                },
+                {
+                    "guid": "3fad92fa-2bd6-d7d6-c708-9080421e7984",
+                    "name": "Low",
+                    "type": 3
+                },
+                {
+                    "guid": "518131d8-72f7-6b51-cb39-3a52d20d7922",
+                    "name": "Close",
+                    "type": 3
+                },
+                {
+                    "guid": "c5f37f34-eafe-b143-f4d4-43b51137e7d9",
+                    "name": "Volume",
+                    "type": 2
+                },
+                {
+                    "guid": "729e0d88-fd8f-b1ff-2472-7957732ded3d",
+                    "name": "Mcap",
+                    "type": 2
+                }
+            ],
+            "position": {
+                "x": 1802.4000244140625,
+                "y": 146.0
+            },
+            "size": {
+                "x": 160.0,
+                "y": 230.0
+            },
+            "type": "GetCurrentCandleDataNode"
+        },
+        {
+            "data": null,
+            "guid": "14d3edf4-c0ba-b61d-8de9-1e4d0f6c8928",
+            "inputs": [
+                {
+                    "guid": "8df09cf7-4851-79c2-96dc-3d0b77daced3",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "c48b6746-3c8a-bee5-2a9e-f3128f410954",
+                    "name": "Take Profit",
+                    "stored_bool": false,
+                    "stored_double": -1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "f356839f-1442-b6b6-c4cd-a91ad5aa767b",
+                    "name": "Stop Loss",
+                    "stored_bool": false,
+                    "stored_double": -1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Set TP/SL",
+            "outputs": [
+                {
+                    "guid": "cac15704-8235-398c-6eef-b1840eb6bb2b",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "a788c63b-1b0a-b4d6-26eb-d965460bf74e",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "72e703d1-e1d0-e639-d910-4174549ec4f6",
+                    "name": "Error",
+                    "type": 5
+                }
+            ],
+            "position": {
+                "x": 3429.39990234375,
+                "y": 100.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 140.0
+            },
+            "type": "SetTpSlNode"
+        },
+        {
+            "data": null,
+            "guid": "268db07a-c9ce-d111-1c00-2f3c841a06bc",
+            "inputs": [
+                {
+                    "guid": "3c79a949-1f2d-9dd4-0581-5ad1f4a669e7",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "121a9278-9353-c1db-79ae-3799a78f1edb",
+                    "name": "Quantity",
+                    "stored_bool": false,
+                    "stored_double": 1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "006f72e8-f3f2-97ed-b972-1f714a25bbc0",
+                    "name": "Leverage",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Open Long",
+            "outputs": [
+                {
+                    "guid": "d9381b2b-7812-df29-5697-91691fe4f0d9",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "625e44b8-e889-3202-82aa-312ea4c23c6e",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "b0948bd0-d128-a119-425b-6767a4d77a93",
+                    "name": "Avg Price",
+                    "type": 3
+                },
+                {
+                    "guid": "224ea533-8553-82be-cb01-fe600cdc3e13",
+                    "name": "Mark Price",
+                    "type": 3
+                },
+                {
+                    "guid": "3d81c501-d4aa-2759-c4a1-e1692a384390",
+                    "name": "Liq Price",
+                    "type": 3
+                },
+                {
+                    "guid": "564b48ae-f82e-e0ab-94cb-fc97823a4fbf",
+                    "name": "Bust Price",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2335.60009765625,
+                "y": 100.0
+            },
+            "size": {
+                "x": 180.0,
+                "y": 180.0
+            },
+            "type": "OpenLongNode"
+        },
+        {
+            "data": null,
+            "guid": "269c19d3-242f-99cc-32c8-6cdbcc14b90a",
+            "inputs": [],
+            "name": "Get Current Candle",
+            "outputs": [
+                {
+                    "guid": "16711cd0-39f5-e016-4327-541c2b316ac2",
+                    "name": "Index",
+                    "type": 1
+                },
+                {
+                    "guid": "20c4e6e0-b387-2876-877f-f686f54ac8c2",
+                    "name": "Timestamp",
+                    "type": 1
+                },
+                {
+                    "guid": "644ed272-a3c8-1a66-2001-0a47338b3482",
+                    "name": "Open",
+                    "type": 3
+                },
+                {
+                    "guid": "1aed6299-c543-6e5d-24aa-e1fefe190710",
+                    "name": "High",
+                    "type": 3
+                },
+                {
+                    "guid": "a7d670f3-e034-6296-c4c1-11c9f945f888",
+                    "name": "Low",
+                    "type": 3
+                },
+                {
+                    "guid": "0144dd72-fed6-87f3-d3e2-a045fd869b52",
+                    "name": "Close",
+                    "type": 3
+                },
+                {
+                    "guid": "77d9b607-3357-1322-052b-04f981e1d340",
+                    "name": "Volume",
+                    "type": 2
+                },
+                {
+                    "guid": "62eb642f-154b-e5fc-cdca-2ed7d08c9016",
+                    "name": "Mcap",
+                    "type": 2
+                }
+            ],
+            "position": {
+                "x": 978.2000122070313,
+                "y": 100.0
+            },
+            "size": {
+                "x": 160.0,
+                "y": 230.0
+            },
+            "type": "GetCurrentCandleDataNode"
+        },
+        {
+            "data": null,
+            "guid": "4a63c11a-5584-80ac-099c-5c01c07dbbea",
+            "inputs": [
+                {
+                    "guid": "7db6eba1-9f48-8684-da32-8755b7a58c07",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "d4062857-a494-6ee2-3bac-1c4be8be0d01",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "c797b762-2c06-6e85-a019-7471bc3577fb",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "b6d5a1f2-6a9c-d61e-73d7-10cd1acd7126",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "a84f2a03-e4d8-8b87-2714-d68fc594dcb3",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2653.0,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": null,
+            "guid": "5195e706-0478-122b-cd68-c766aefffa67",
+            "inputs": [
+                {
+                    "guid": "108aad94-293d-4d49-ee46-c27b7c6a2324",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "9bd7b880-a8c0-7a0d-7cc6-b49a2271049c",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "979ea4e7-0943-1a64-ead3-7fcf5ea36af4",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "07613aef-b45e-5d56-3b69-2bece5aad7cc",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "52a9cb09-8812-1d95-c062-7e7b3cd440bd",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 687.2000122070313,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "variableGuid": "84b498e2-32e3-fc20-5d1e-a7cad5301564"
+            },
+            "guid": "605f87cb-4bb0-6117-5d86-dd595fdccbd0",
+            "inputs": [],
+            "name": "Get SL Mult",
+            "outputs": [
+                {
+                    "guid": "625ccfe0-8d49-1eb3-a0e8-8c9fef422359",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2944.0,
+                "y": 146.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3,
+                "r": 3
+            },
+            "guid": "6bd0f6b5-5ab8-b4aa-72bb-3a938ce318ec",
+            "inputs": [
+                {
+                    "guid": "d28353b1-8ffa-90ee-589a-26703e69c95c",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "d33ebfe3-923d-5607-57e8-ed931fbac844",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "/",
+            "outputs": [
+                {
+                    "guid": "b79d67a8-cead-cf97-5b88-85ca1dee5b6e",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2035.5999755859375,
+                "y": 100.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "DivideNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3,
+                "r": 3
+            },
+            "guid": "85521fe8-0ba0-417e-f31f-26b4e5303c73",
+            "inputs": [
+                {
+                    "guid": "1636d228-6b5c-575b-dd90-ea420aaa9570",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "4045a1c8-154c-4a88-ea10-e9f88fe28c5b",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "*",
+            "outputs": [
+                {
+                    "guid": "f1acbfa9-88c7-c584-6c97-352dc41ec2e6",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 3129.39990234375,
+                "y": 152.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MultiplyNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3,
+                "r": 3
+            },
+            "guid": "978b3dfc-3abf-999c-d01e-51bed85b7c77",
+            "inputs": [
+                {
+                    "guid": "132e353c-dba6-ef58-54c9-4714d733a63b",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "fbddca55-d062-9e7c-ea97-0e232d502fc6",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "*",
+            "outputs": [
+                {
+                    "guid": "d99e93e8-5ef8-1299-1b54-8d788caccc61",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 3129.39990234375,
+                "y": 100.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MultiplyNode"
+        },
+        {
+            "data": null,
+            "guid": "Entry",
+            "inputs": [],
+            "name": "Entry",
+            "outputs": [
+                {
+                    "guid": "OutPinEntry",
+                    "name": "Entry",
+                    "type": 0
+                }
+            ],
+            "position": {
+                "x": 100.0,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "EntryNode"
+        },
+        {
+            "data": {
+                "variableGuid": "8c3fb183-4f66-9059-5ec1-6144a1360d9c"
+            },
+            "guid": "a7df7879-4a5c-8b56-8989-05755c1bb28e",
+            "inputs": [],
+            "name": "Get Leverage",
+            "outputs": [
+                {
+                    "guid": "a6fbb260-9aff-7181-2939-799ba6c21298",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2143.0,
+                "y": 152.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "variableGuid": "2114c675-6743-0fcd-7bf7-b80a1fcc7f7a"
+            },
+            "guid": "affd7e72-6522-4d7c-e76f-bf5cce35946f",
+            "inputs": [],
+            "name": "Get Entry Index",
+            "outputs": [
+                {
+                    "guid": "aeed9d48-2311-b78e-8586-2907b635ac3e",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 997.2000122070313,
+                "y": 187.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "b0d26dd3-220d-1b38-2e1d-6a81792ef3b5",
+            "inputs": [
+                {
+                    "guid": "27cea2aa-6084-75f4-9569-52049afaa445",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "2a1d8ce1-f3f5-8126-22a5-b47dffff04eb",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "33e87e50-29ae-f6ac-663d-7199ed1c847f",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "d19bbb35-d41c-1313-87b8-b2adffce4ccc",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "e604cb2b-1389-138b-d863-f3d79500220f",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1511.4000244140625,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "a": 1,
+                "b": 1
+            },
+            "guid": "e0fedc46-9cbc-356e-9acb-d3e6e009dc08",
+            "inputs": [
+                {
+                    "guid": "c46c6c32-712c-c8b0-e9ff-027b55bdbae6",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "8f537670-6390-d6da-2cef-e6cc6e899842",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "==",
+            "outputs": [
+                {
+                    "guid": "a8ef5e71-f7a5-e0f5-c4e3-c379cfca9c3e",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1211.4000244140625,
+                "y": 100.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "EqualNode"
+        },
+        {
+            "data": {
+                "variableGuid": "92d6444c-4ab8-74a6-e311-b5e3339293d3"
+            },
+            "guid": "ecfe8f3d-d02e-c514-1b7f-a25a7874eafd",
+            "inputs": [],
+            "name": "Get Position USDT",
+            "outputs": [
+                {
+                    "guid": "68577b77-c9fe-e59b-1855-888af90f7307",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 1807.0,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "variableGuid": "197863ae-5be1-ddd4-3d5c-26842ec3cab0"
+            },
+            "guid": "efc4d17d-eb12-57f5-a2b6-c4a20d635985",
+            "inputs": [],
+            "name": "Get TP Mult",
+            "outputs": [
+                {
+                    "guid": "457a9557-66a2-09f9-c4a3-e708c258dc04",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2944.0,
+                "y": 100.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        }
+    ],
+    "variables": [
+        {
+            "global": false,
+            "guid": "197863ae-5be1-ddd4-3d5c-26842ec3cab0",
+            "name": "TP Mult",
+            "parameter": true,
+            "type": 3,
+            "value": 1.02
+        },
+        {
+            "global": false,
+            "guid": "2114c675-6743-0fcd-7bf7-b80a1fcc7f7a",
+            "name": "Entry Index",
+            "parameter": true,
+            "type": 1,
+            "value": 2
+        },
+        {
+            "global": false,
+            "guid": "84b498e2-32e3-fc20-5d1e-a7cad5301564",
+            "name": "SL Mult",
+            "parameter": true,
+            "type": 3,
+            "value": 0.98
+        },
+        {
+            "global": false,
+            "guid": "8c3fb183-4f66-9059-5ec1-6144a1360d9c",
+            "name": "Leverage",
+            "parameter": true,
+            "type": 3,
+            "value": 1.0
+        },
+        {
+            "global": false,
+            "guid": "92d6444c-4ab8-74a6-e311-b5e3339293d3",
+            "name": "Position USDT",
+            "parameter": true,
+            "type": 3,
+            "value": 1000.0
+        }
+    ]
+}

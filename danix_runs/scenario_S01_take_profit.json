@@ -1,0 +1,98 @@
+{
+ "strategy": "VERIFY Fixed TP SL.json",
+ "parameters": {},
+ "results": {
+  "avg_trade_pnl": 18.889,
+  "best_trade": 18.889,
+  "blocked_orders": 0,
+  "closed_positions": 1,
+  "commission_paid": 1.111,
+  "equity_end": 10018.889,
+  "last_positions": [],
+  "liquidations": 0,
+  "market": {
+   "buy_and_hold_pct": 2.2,
+   "candles": 8,
+   "first_close": 100.0,
+   "from": "2026-01-01 00:00",
+   "last_close": 102.2,
+   "to": "2026-01-01 07:00"
+  },
+  "max_drawdown": 0.55,
+  "max_drawdown_pct": 0.0055,
+  "open_positions": 0,
+  "open_positions_list": [],
+  "orders": 2,
+  "profit_factor": null,
+  "realized_pnl": 18.889,
+  "return_pct": 0.18889,
+  "starting_balance": 10000.0,
+  "ticks": {
+   "mode": "candles",
+   "note": "ticks: false - orders by candle high/low, the strategy on candle close"
+  },
+  "tpsl_rejected": 0,
+  "trades": 1,
+  "unrealized_pnl": 0.0,
+  "win_rate_pct": 100.0,
+  "worst_trade": 18.889
+ },
+ "settings": {
+  "fixed_commission": 0.0,
+  "futures_fee_source": "parameters",
+  "maker_fee_percent": 0.02,
+  "margin_fee_percent": 0.055,
+  "percent_commission": 0.0,
+  "spot_fee_source": "default 0.1% maker / taker (Bybit / Binance spot VIP 0): the strategy has no Spot nodes",
+  "spot_maker_fee_percent": 0.1,
+  "spot_taker_fee_percent": 0.1,
+  "starting_balance": 10000.0
+ },
+ "source": {
+  "file": "VERIFY S01_take_profit",
+  "loaded": 8,
+  "tested_first_ms": 1767225600000,
+  "tested_last_ms": 1767250800000,
+  "type": "csv",
+  "warmup_mode": "manual",
+  "warmup_needed": 0
+ },
+ "log": [
+  "Successfully imported 8 records from Data/charts/VERIFY S01_take_profit"
+ ],
+ "positions": [
+  {
+   "close_t": 1767240000000,
+   "entry": 100.0,
+   "exit": 102.0,
+   "fee": 1.1110000000000002,
+   "leverage": 1.0,
+   "mae": -6.0,
+   "mfe": 25.0,
+   "open": false,
+   "open_t": 1767232800000,
+   "pnl": 18.889,
+   "quantity": 10.0,
+   "roi": 1.8889,
+   "side": "long"
+  }
+ ],
+ "id": "scenario_S01_take_profit",
+ "args": {
+  "margin_fee_percent": 0.055,
+  "maker_fee_percent": 0.02,
+  "starting_balance": 10000,
+  "name": "VERIFY Fixed TP SL",
+  "source": {
+   "type": "csv",
+   "file": "VERIFY S01_take_profit"
+  },
+  "ticks": false,
+  "warmup": 0,
+  "parameters": {},
+  "chart": true,
+  "last_trades": 0,
+  "log_lines": 20,
+  "history": false
+ }
+}

@@ -1,0 +1,1458 @@
+{
+ "exports": [
+  {
+   "file": "BTCUSDT_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "BTCUSDT_5.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-20",
+     "to": "2026-06-24"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "SOLUSDT_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "SOLUSDT_5.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-20",
+     "to": "2026-06-24"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "STRKUSDT_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "STRKUSDT_5.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-20",
+     "to": "2026-06-24"
+    },
+    "limit": 20000
+   }
+  }
+ ],
+ "runs": [
+  {
+   "id": "candles_BTCUSDT_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_BTCUSDT_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_BTCUSDT_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_BTCUSDT_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_BTCUSDT_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_BTCUSDT_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "lookahead",
+   "full": "candles_BTCUSDT_fast"
+  },
+  {
+   "id": "ticks_BTCUSDT",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ticks"
+  },
+  {
+   "id": "ticks_BTCUSDT_nofee",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_BTCUSDT_spread",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_BTCUSDT_ping",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 200,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles5m_BTCUSDT",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "BTCUSDT",
+   "group": "ticks_vs_candles",
+   "ticks_run": "ticks_BTCUSDT"
+  },
+  {
+   "id": "walkforward_BTCUSDT",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "BTCUSDT",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "BTCUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  },
+  {
+   "id": "candles_SOLUSDT_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_SOLUSDT_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_SOLUSDT_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDT_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDT_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDT_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "lookahead",
+   "full": "candles_SOLUSDT_fast"
+  },
+  {
+   "id": "ticks_SOLUSDT",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ticks"
+  },
+  {
+   "id": "ticks_SOLUSDT_nofee",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_SOLUSDT_spread",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_SOLUSDT_ping",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 200,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles5m_SOLUSDT",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDT",
+   "group": "ticks_vs_candles",
+   "ticks_run": "ticks_SOLUSDT"
+  },
+  {
+   "id": "walkforward_SOLUSDT",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "SOLUSDT",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "SOLUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  },
+  {
+   "id": "candles_STRKUSDT_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_STRKUSDT_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "candles"
+  },
+  {
+   "id": "candles_STRKUSDT_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDT_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDT_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDT_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "lookahead",
+   "full": "candles_STRKUSDT_fast"
+  },
+  {
+   "id": "ticks_STRKUSDT",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ticks"
+  },
+  {
+   "id": "ticks_STRKUSDT_nofee",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_STRKUSDT_spread",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "ticks_STRKUSDT_ping",
+   "kind": "ticks",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR next-tick",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": true,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 200,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ablation"
+  },
+  {
+   "id": "candles5m_STRKUSDT",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "5",
+     "from": "2026-06-23",
+     "to": "2026-06-24"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDT",
+   "group": "ticks_vs_candles",
+   "ticks_run": "ticks_STRKUSDT"
+  },
+  {
+   "id": "walkforward_STRKUSDT",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "STRKUSDT",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "symbol": "STRKUSDT",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  },
+  {
+   "id": "scenario_S01_take_profit",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S01_take_profit"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S01_take_profit"
+  },
+  {
+   "id": "scenario_S02_stop_loss",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S02_stop_loss"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S02_stop_loss"
+  },
+  {
+   "id": "scenario_S03_tp_and_sl_same_candle",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S03_tp_and_sl_same_candle"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S03_tp_and_sl_same_candle"
+  },
+  {
+   "id": "scenario_S04_gap_through_stop",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S04_gap_through_stop"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S04_gap_through_stop"
+  },
+  {
+   "id": "scenario_S05_gap_through_take_profit",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S05_gap_through_take_profit"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S05_gap_through_take_profit"
+  },
+  {
+   "id": "scenario_S06_position_open_at_end",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S06_position_open_at_end"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {},
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S06_position_open_at_end"
+  },
+  {
+   "id": "scenario_S07_liquidation_x10",
+   "kind": "scenario",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.055,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY Fixed TP SL",
+    "source": {
+     "type": "csv",
+     "file": "VERIFY S07_liquidation_x10"
+    },
+    "ticks": false,
+    "warmup": 0,
+    "parameters": {
+     "Leverage": 10,
+     "SL Mult": 0.5
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "group": "scenarios",
+   "scenario": "S07_liquidation_x10"
+  }
+ ]
+}

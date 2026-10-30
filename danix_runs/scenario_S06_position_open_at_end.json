@@ -1,0 +1,110 @@
+{
+ "strategy": "VERIFY Fixed TP SL.json",
+ "parameters": {},
+ "results": {
+  "avg_trade_pnl": 0.0,
+  "best_trade": 0.0,
+  "blocked_orders": 0,
+  "closed_positions": 0,
+  "commission_paid": 0.55,
+  "equity_end": 10004.45,
+  "last_positions": [],
+  "liquidations": 0,
+  "market": {
+   "buy_and_hold_pct": 0.5,
+   "candles": 8,
+   "first_close": 100.0,
+   "from": "2026-01-01 00:00",
+   "last_close": 100.5,
+   "to": "2026-01-01 07:00"
+  },
+  "max_drawdown": 0.55,
+  "max_drawdown_pct": 0.0055,
+  "open_positions": 1,
+  "open_positions_list": [
+   {
+    "entry": 100.0,
+    "leverage": 1.0,
+    "open_ms": 1767232800000,
+    "open_time": "2026-01-01 02:00",
+    "quantity": 10.0,
+    "side": "long"
+   }
+  ],
+  "orders": 1,
+  "profit_factor": null,
+  "realized_pnl": 0.0,
+  "return_pct": 0.0445,
+  "starting_balance": 10000.0,
+  "ticks": {
+   "mode": "candles",
+   "note": "ticks: false - orders by candle high/low, the strategy on candle close"
+  },
+  "tpsl_rejected": 0,
+  "trades": 0,
+  "unrealized_pnl": 4.45,
+  "warnings": [
+   "no closed trades: return_pct comes only from unrealized_pnl of the position(s) still open at the end, win_rate and profit_factor are not defined"
+  ],
+  "win_rate_pct": 0.0,
+  "worst_trade": 0.0
+ },
+ "settings": {
+  "fixed_commission": 0.0,
+  "futures_fee_source": "parameters",
+  "maker_fee_percent": 0.02,
+  "margin_fee_percent": 0.055,
+  "percent_commission": 0.0,
+  "spot_fee_source": "default 0.1% maker / taker (Bybit / Binance spot VIP 0): the strategy has no Spot nodes",
+  "spot_maker_fee_percent": 0.1,
+  "spot_taker_fee_percent": 0.1,
+  "starting_balance": 10000.0
+ },
+ "source": {
+  "file": "VERIFY S06_position_open_at_end",
+  "loaded": 8,
+  "tested_first_ms": 1767225600000,
+  "tested_last_ms": 1767250800000,
+  "type": "csv",
+  "warmup_mode": "manual",
+  "warmup_needed": 0
+ },
+ "log": [
+  "Successfully imported 8 records from Data/charts/VERIFY S06_position_open_at_end"
+ ],
+ "positions": [
+  {
+   "close_t": 0,
+   "entry": 100.0,
+   "exit": 0.0,
+   "fee": 0.55,
+   "leverage": 1.0,
+   "mae": -10.0,
+   "mfe": 10.0,
+   "open": true,
+   "open_t": 1767232800000,
+   "pnl": 0.0,
+   "quantity": 10.0,
+   "roi": 0.0,
+   "side": "long"
+  }
+ ],
+ "id": "scenario_S06_position_open_at_end",
+ "args": {
+  "margin_fee_percent": 0.055,
+  "maker_fee_percent": 0.02,
+  "starting_balance": 10000,
+  "name": "VERIFY Fixed TP SL",
+  "source": {
+   "type": "csv",
+   "file": "VERIFY S06_position_open_at_end"
+  },
+  "ticks": false,
+  "warmup": 0,
+  "parameters": {},
+  "chart": true,
+  "last_trades": 0,
+  "log_lines": 20,
+  "history": false
+ }
+}

@@ -1,0 +1,2476 @@
+{
+    "connections": [
+        {
+            "from_pin": "OutPinEntry",
+            "to_pin": "57522e82-d8ec-c31f-6c5f-b81b55a4cb63"
+        },
+        {
+            "from_pin": "fee6ddc5-31df-d0d6-af38-0496ec2bb627",
+            "to_pin": "1b68b4cd-e7d5-cc1e-c4f1-6af2c26aede5"
+        },
+        {
+            "from_pin": "57b70dda-9edb-a664-33f8-ec94bfa5542f",
+            "to_pin": "e25f6f5c-1b6e-c2bd-6127-b5a6e3d118fd"
+        },
+        {
+            "from_pin": "814ff919-4009-3ad0-8cec-5c138cbf7800",
+            "to_pin": "492844d2-5ca9-c02f-3edf-f9c21b64c218"
+        },
+        {
+            "from_pin": "b7eec863-c325-6963-356f-cc4a415b1566",
+            "to_pin": "8f783185-81ba-9178-f181-f023ecc9596f"
+        },
+        {
+            "from_pin": "df84a2b8-8a3d-29b1-7743-f07457599d6e",
+            "to_pin": "4f4c2208-9418-378e-46d4-38318d8915ea"
+        },
+        {
+            "from_pin": "8dc4410d-3354-9312-8088-8471cf83331b",
+            "to_pin": "e82b0da3-c254-e50f-79f2-822d93fb01c2"
+        },
+        {
+            "from_pin": "1cd34008-c429-615f-657d-e82a0fd4cc8e",
+            "to_pin": "f71b40aa-3de5-db4d-e690-697b6a40f6bf"
+        },
+        {
+            "from_pin": "a8bb9f35-1ec2-f2cc-23b1-5a6038640fa9",
+            "to_pin": "a6a14c55-56f8-76fb-410a-918f1a112bdb"
+        },
+        {
+            "from_pin": "1221a131-4f8d-46ef-69a8-b9396ba622be",
+            "to_pin": "beea562d-9657-0e22-65b4-a672f24436c4"
+        },
+        {
+            "from_pin": "738c2274-429f-a365-940a-7c3b3db1b1dd",
+            "to_pin": "4fed0090-1e27-e236-63c8-469210c683d3"
+        },
+        {
+            "from_pin": "50c6ff75-ac49-0bc4-c97b-98510ec0715b",
+            "to_pin": "90ae42df-558b-2b9f-d2d3-84191c6a3bf1"
+        },
+        {
+            "from_pin": "f5ad7afc-834a-e2a7-0936-cf7f1dc31a79",
+            "to_pin": "9497b979-c7c2-91ef-5ca6-ea8fc6e38406"
+        },
+        {
+            "from_pin": "c32c23cb-6dc0-9aaf-7d75-9d97fde9ed60",
+            "to_pin": "30e23530-8077-dc84-f3b4-53d45310dd68"
+        },
+        {
+            "from_pin": "f0c5a5ee-8931-c1c2-6b51-a7ce144c8ff8",
+            "to_pin": "7aaa4543-0e81-f73a-7b19-1d524c13f8da"
+        },
+        {
+            "from_pin": "e22a2cb5-cd8a-195b-998d-dd11f49e3445",
+            "to_pin": "08dd38cd-d2c3-51f0-fc00-52882b676a6d"
+        },
+        {
+            "from_pin": "6ccde608-04de-bfc6-5340-36dd5b973a3f",
+            "to_pin": "2fba7170-371e-ebfa-6eb0-a975f93ecf82"
+        },
+        {
+            "from_pin": "6d7b7e52-a5a5-18d2-a40a-52d80e05bdbf",
+            "to_pin": "2b7f35e0-c679-3924-2f8d-a79252c22675"
+        },
+        {
+            "from_pin": "52b21525-7310-807d-891d-c3b4ea96a4a8",
+            "to_pin": "b0bd8ae3-e3dd-363e-ac91-7f375efc2aac"
+        },
+        {
+            "from_pin": "dffce4b7-231a-5bdd-0fe8-eaed1932c8b4",
+            "to_pin": "070af455-9949-ee66-6350-009267e23d8a"
+        },
+        {
+            "from_pin": "3328449e-f85b-da19-8a71-c4093674bca1",
+            "to_pin": "882f1113-c47e-d504-e8ab-ca13dd5385e9"
+        },
+        {
+            "from_pin": "0550f425-cb5b-ac62-54f1-e501bdf79ddc",
+            "to_pin": "a5cf8dfb-256e-8d71-6ccd-a293bda34328"
+        },
+        {
+            "from_pin": "fa3f30fc-13c5-3f62-ad7e-19cd81bd7cbd",
+            "to_pin": "9a594fe4-cc22-1589-033d-7aa8949172a6"
+        },
+        {
+            "from_pin": "90357aa4-3943-a409-3b7a-fd0192b7d140",
+            "to_pin": "7443dc2f-daee-dd87-5871-fc1c951c0cbb"
+        },
+        {
+            "from_pin": "73013ab3-a3c2-baa7-0361-b706b34e7911",
+            "to_pin": "a7409ac6-a4f6-a154-9557-4544d2f9bb09"
+        },
+        {
+            "from_pin": "c2d341cb-8042-5265-84a0-547e670ac618",
+            "to_pin": "b3d5843f-2fbf-5461-1c2c-0b81cf550ce9"
+        },
+        {
+            "from_pin": "3e7464d0-2be0-548d-4e4c-df6b2781e99b",
+            "to_pin": "a9b7e502-d492-3b6e-6a6b-4fca83e4c705"
+        },
+        {
+            "from_pin": "657137e5-278e-c9c7-aa3f-0c0a7d9257b5",
+            "to_pin": "5e13c67d-a7e3-880d-3d7e-ea46ce5c0559"
+        },
+        {
+            "from_pin": "050c638b-2681-3c6b-1ba8-ddfa6ea7cf90",
+            "to_pin": "4f12ccb1-688c-03b6-67ad-893a54c3dc02"
+        },
+        {
+            "from_pin": "e227be85-6db6-c14f-acc6-38d7732c7879",
+            "to_pin": "eafbe2ff-c7e0-ae0c-202a-ecafc7a33980"
+        },
+        {
+            "from_pin": "11a9a2d5-1dc9-e527-4449-a7be293c5bd1",
+            "to_pin": "8c5c32f8-2444-f459-9238-effa45264494"
+        },
+        {
+            "from_pin": "6ecae2e8-853a-de7d-8333-3033bb9eb0cc",
+            "to_pin": "13107a9d-7ff7-3a43-a194-8c13ddd5e291"
+        },
+        {
+            "from_pin": "05a13298-ef0c-5bf5-8762-f383d82bfb17",
+            "to_pin": "95bf6de9-ca84-91e5-4879-628a9d87f39c"
+        },
+        {
+            "from_pin": "a857ff06-ab63-217b-5039-ae4f2ee410ce",
+            "to_pin": "5aac96f9-82ff-2470-a3cb-a3b171c5ce99"
+        },
+        {
+            "from_pin": "6e45f7f3-27df-26d1-4ddb-aaf10417e916",
+            "to_pin": "afa566f3-867c-dcc7-ab2c-1ebeaa18efa0"
+        },
+        {
+            "from_pin": "524b9ebe-05e9-79bb-1e16-63be4eb9255b",
+            "to_pin": "f2f1422e-eb70-8c51-dfb5-0cd119db7e99"
+        },
+        {
+            "from_pin": "83836acb-f04d-fff5-e36b-169152597be8",
+            "to_pin": "ff2ee33a-1c88-dd5e-1df7-bd52f9160949"
+        },
+        {
+            "from_pin": "11a9a2d5-1dc9-e527-4449-a7be293c5bd1",
+            "to_pin": "7e1f0429-9321-b005-a22f-8807fcf373fc"
+        },
+        {
+            "from_pin": "001a7cb8-30d7-50af-41eb-376b67640774",
+            "to_pin": "96c2212c-b531-538a-8ed9-4005a637b965"
+        },
+        {
+            "from_pin": "6e45f7f3-27df-26d1-4ddb-aaf10417e916",
+            "to_pin": "8493eacd-e848-2855-e918-4dc6a5ca79ca"
+        },
+        {
+            "from_pin": "05a3bd7b-afee-1ed5-9e27-bd3f6506444b",
+            "to_pin": "913edb39-cc0e-5a15-98e6-6c3142a7d9e0"
+        },
+        {
+            "from_pin": "c3ff8f99-4ef8-e2b9-5e5f-f283ba4ce449",
+            "to_pin": "d0734d64-f9cc-4cad-b3c8-84fa18fe512a"
+        },
+        {
+            "from_pin": "e26a5db0-9efc-a422-b23c-48ca0fc9e38b",
+            "to_pin": "d77220ca-dfc9-b791-0300-69e561a3919c"
+        },
+        {
+            "from_pin": "bafb6d35-810b-9fe1-b6fa-bd29bb29239a",
+            "to_pin": "e7a809fa-834c-023c-b6e9-0f7cb2e25441"
+        },
+        {
+            "from_pin": "1b1a9f14-d35e-d017-a4ea-512f1300f5de",
+            "to_pin": "d33a0278-928e-35a8-7474-9e8d68285d6f"
+        },
+        {
+            "from_pin": "f0c5a5ee-8931-c1c2-6b51-a7ce144c8ff8",
+            "to_pin": "a3e0683e-1c35-d790-c3f3-61698984950e"
+        },
+        {
+            "from_pin": "e22a2cb5-cd8a-195b-998d-dd11f49e3445",
+            "to_pin": "e1380aad-af39-44cf-7a0d-64c83be0e5bb"
+        },
+        {
+            "from_pin": "97ca0056-6bf6-6d85-e4c6-18ad41d4db3a",
+            "to_pin": "248cd0f5-43f5-6490-a087-0a4495125b7b"
+        },
+        {
+            "from_pin": "d62da460-9865-126a-902d-3f3bd19ef106",
+            "to_pin": "68fe9aca-93e0-8606-1bf3-9ecf75c74f06"
+        },
+        {
+            "from_pin": "11a12d9b-4d5e-2d49-1ff0-389a4456b03f",
+            "to_pin": "ff30c746-19f9-97b6-6438-4906324a6a19"
+        },
+        {
+            "from_pin": "32277272-9564-3007-2eaa-a463b935a4d0",
+            "to_pin": "08603d79-48dc-4478-a2e7-b656810f612b"
+        },
+        {
+            "from_pin": "344d5ef1-fe0d-9dae-a8b4-b9d5ec2ceb26",
+            "to_pin": "a064f23c-6fce-6200-6282-23b6d25e625f"
+        },
+        {
+            "from_pin": "86920c36-34e1-35a0-d965-92db82955e34",
+            "to_pin": "b683cc4c-599c-7bb1-9d6f-89a3b9b4a234"
+        },
+        {
+            "from_pin": "3b369f83-6edc-7aa8-b36e-5b80d193f17d",
+            "to_pin": "261b5996-a576-e7e9-50c0-b2a31aec0af3"
+        },
+        {
+            "from_pin": "de6958df-b198-003e-f543-b63f565fce8a",
+            "to_pin": "50d0ca2a-8a29-5516-963f-bc701d1384ad"
+        },
+        {
+            "from_pin": "a245ff8b-86c7-5ffc-6300-8c3a7ab75a4f",
+            "to_pin": "8f6cf516-8e09-befc-8f65-bdc36eb8afe4"
+        },
+        {
+            "from_pin": "0108c3b2-0483-dbee-d7fc-0058f1849af2",
+            "to_pin": "6ef6b5ef-e535-6fb1-30a0-381b0cee0465"
+        },
+        {
+            "from_pin": "6d6bf4f5-bee4-8b1c-0fc8-2628fe7c4018",
+            "to_pin": "5b7c9b0a-adde-7b04-925f-ce2be495a6e3"
+        },
+        {
+            "from_pin": "8eb4c453-2ae5-48b9-30ab-62b24ef4cc24",
+            "to_pin": "cf95f8b2-a5f5-8df1-e794-1a3fb4beb9c4"
+        },
+        {
+            "from_pin": "f5929c26-086e-1a6f-37fa-1e714f5c9144",
+            "to_pin": "5a97c6f2-bd5e-43d0-ae06-185c3270ed65"
+        }
+    ],
+    "description": "Verification strategy (tick model). EMA cross + ATR stop, long only. Signals use only CLOSED candles (EMA Index 1/2, ATR Index 1), so with real ticks the entry is a market order at the first tick of the next candle. At most one entry per candle (Last Entry Candle). TP/SL = ATR Stop x ATR and Reward Ratio x that distance from the fill; exit also when Fast EMA < Slow EMA on the last closed candle.",
+    "nodes": [
+        {
+            "data": {
+                "variableGuid": "70e310c6-acbe-ed71-0a4f-b259911024e8"
+            },
+            "guid": "0e2724cc-55bd-fa87-edd2-82b363ea3d2f",
+            "inputs": [],
+            "name": "Get ATR Stop",
+            "outputs": [
+                {
+                    "guid": "001a7cb8-30d7-50af-41eb-376b67640774",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 400.0,
+                "y": 1141.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "variableGuid": "ebd05706-b934-750c-222e-b5993c3c5d58"
+            },
+            "guid": "155f3e4c-6446-5b65-5e27-7d17686ad881",
+            "inputs": [],
+            "name": "Get Slow EMA",
+            "outputs": [
+                {
+                    "guid": "a8bb9f35-1ec2-f2cc-23b1-5a6038640fa9",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 1269.199951171875,
+                "y": 500.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "23f47271-b79a-8528-c46a-a373f0d3e0d8",
+            "inputs": [
+                {
+                    "guid": "9497b979-c7c2-91ef-5ca6-ea8fc6e38406",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "30e23530-8077-dc84-f3b4-53d45310dd68",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "0550f425-cb5b-ac62-54f1-e501bdf79ddc",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2052.199951171875,
+                "y": 506.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": null,
+            "guid": "299b7673-5d14-3f02-86b9-a3811e601591",
+            "inputs": [
+                {
+                    "guid": "4f4c2208-9418-378e-46d4-38318d8915ea",
+                    "name": "Period",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 12,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "e9fce021-4acc-140c-8c96-ac84fc56f4fd",
+                    "name": "Index",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 1,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "e0f9d755-45ea-f648-1276-dcbc9b9fe067",
+                    "name": "Timeframe",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "EMA",
+            "outputs": [
+                {
+                    "guid": "f0c5a5ee-8931-c1c2-6b51-a7ce144c8ff8",
+                    "name": "EMA",
+                    "type": 3
+                },
+                {
+                    "guid": "ee727174-bf79-5d76-1b02-daadcb3b2ad3",
+                    "name": "Valid",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1475.0,
+                "y": 200.0
+            },
+            "size": {
+                "x": 140.0,
+                "y": 120.0
+            },
+            "type": "EMANode"
+        },
+        {
+            "data": null,
+            "guid": "2e35b1e5-288b-6c69-2cf2-b6ca4180b9fb",
+            "inputs": [
+                {
+                    "guid": "a6a14c55-56f8-76fb-410a-918f1a112bdb",
+                    "name": "Period",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 12,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "4856ea12-7f67-cabb-f351-d7cf9205bf36",
+                    "name": "Index",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 2,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "c1ee8459-32c1-57ba-706b-e2832ea1edd5",
+                    "name": "Timeframe",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "EMA",
+            "outputs": [
+                {
+                    "guid": "6d7b7e52-a5a5-18d2-a40a-52d80e05bdbf",
+                    "name": "EMA",
+                    "type": 3
+                },
+                {
+                    "guid": "738c2274-429f-a365-940a-7c3b3db1b1dd",
+                    "name": "Valid",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1461.800048828125,
+                "y": 565.0
+            },
+            "size": {
+                "x": 140.0,
+                "y": 120.0
+            },
+            "type": "EMANode"
+        },
+        {
+            "data": null,
+            "guid": "2e8f65ec-62a1-0ed4-273c-2971a31c44ec",
+            "inputs": [],
+            "name": "Get Current Candle",
+            "outputs": [
+                {
+                    "guid": "86920c36-34e1-35a0-d965-92db82955e34",
+                    "name": "Index",
+                    "type": 1
+                },
+                {
+                    "guid": "1f36932f-6fc7-9a9d-8eb1-8d63e6d52b8d",
+                    "name": "Timestamp",
+                    "type": 1
+                },
+                {
+                    "guid": "a92f2c16-2567-faf5-f468-e464b9657ec0",
+                    "name": "Open",
+                    "type": 3
+                },
+                {
+                    "guid": "81055a58-f732-d0e6-c63a-eec9cd60a29b",
+                    "name": "High",
+                    "type": 3
+                },
+                {
+                    "guid": "0931bff3-766d-31f9-77d5-d8cf9b6fb327",
+                    "name": "Low",
+                    "type": 3
+                },
+                {
+                    "guid": "4bfdbcab-f687-51a6-c577-916aa30b6b75",
+                    "name": "Close",
+                    "type": 3
+                },
+                {
+                    "guid": "7316c9db-d12b-b0dc-0942-149205efc2c9",
+                    "name": "Volume",
+                    "type": 2
+                },
+                {
+                    "guid": "515a24b2-e0cc-3772-38eb-6ee1db54f443",
+                    "name": "Mcap",
+                    "type": 2
+                }
+            ],
+            "position": {
+                "x": 2119.0,
+                "y": 558.0
+            },
+            "size": {
+                "x": 160.0,
+                "y": 230.0
+            },
+            "type": "GetCurrentCandleDataNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "2eaa12c6-06c3-db1e-e531-f224da4337c4",
+            "inputs": [
+                {
+                    "guid": "8493eacd-e848-2855-e918-4dc6a5ca79ca",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "913edb39-cc0e-5a15-98e6-6c3142a7d9e0",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "-",
+            "outputs": [
+                {
+                    "guid": "c3ff8f99-4ef8-e2b9-5e5f-f283ba4ce449",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 892.5999755859375,
+                "y": 1095.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "SubtractNode"
+        },
+        {
+            "data": null,
+            "guid": "344d6234-fc88-ab17-f56f-7180552fdaaf",
+            "inputs": [
+                {
+                    "guid": "f71b40aa-3de5-db4d-e690-697b6a40f6bf",
+                    "name": "Period",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 12,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "60be46aa-64b4-b087-8633-28f1f32ec69b",
+                    "name": "Index",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 2,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "ffdeeca7-0ae5-1379-9aa2-132e41b668f9",
+                    "name": "Timeframe",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "EMA",
+            "outputs": [
+                {
+                    "guid": "6ccde608-04de-bfc6-5340-36dd5b973a3f",
+                    "name": "EMA",
+                    "type": 3
+                },
+                {
+                    "guid": "50c6ff75-ac49-0bc4-c97b-98510ec0715b",
+                    "name": "Valid",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1461.800048828125,
+                "y": 454.0
+            },
+            "size": {
+                "x": 140.0,
+                "y": 120.0
+            },
+            "type": "EMANode"
+        },
+        {
+            "data": null,
+            "guid": "42a7837a-e5b4-abce-366e-ca12f8a10830",
+            "inputs": [
+                {
+                    "guid": "492844d2-5ca9-c02f-3edf-f9c21b64c218",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "8f783185-81ba-9178-f181-f023ecc9596f",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "11a12d9b-4d5e-2d49-1ff0-389a4456b03f",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "fa3f30fc-13c5-3f62-ad7e-19cd81bd7cbd",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "a20089d1-af61-6fe7-11f2-4254fd5e081b",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 978.2000122070313,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "variableGuid": "ebd05706-b934-750c-222e-b5993c3c5d58"
+            },
+            "guid": "450987d1-2d83-1313-2cdf-55965c2e10f6",
+            "inputs": [],
+            "name": "Get Slow EMA",
+            "outputs": [
+                {
+                    "guid": "8dc4410d-3354-9312-8088-8471cf83331b",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 1269.199951171875,
+                "y": 246.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "56ab34fe-02dc-aa73-6403-a2c944d614b9",
+            "inputs": [
+                {
+                    "guid": "882f1113-c47e-d504-e8ab-ca13dd5385e9",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "a5cf8dfb-256e-8d71-6ccd-a293bda34328",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "de6958df-b198-003e-f543-b63f565fce8a",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2352.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "5a70de5d-20be-e6d4-4d03-0ee999c9e74f",
+            "inputs": [
+                {
+                    "guid": "8c5c32f8-2444-f459-9238-effa45264494",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "13107a9d-7ff7-3a43-a194-8c13ddd5e291",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "*",
+            "outputs": [
+                {
+                    "guid": "05a13298-ef0c-5bf5-8762-f383d82bfb17",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 292.6000061035156,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MultiplyNode"
+        },
+        {
+            "data": null,
+            "guid": "61ad52ec-62cf-322c-3165-67456aaaa0e6",
+            "inputs": [
+                {
+                    "guid": "50d0ca2a-8a29-5516-963f-bc701d1384ad",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "8f6cf516-8e09-befc-8f65-bdc36eb8afe4",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "0108c3b2-0483-dbee-d7fc-0058f1849af2",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2652.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "650fb6bd-7d61-e62b-068a-949da0f0eb82",
+            "inputs": [
+                {
+                    "guid": "2fba7170-371e-ebfa-6eb0-a975f93ecf82",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "2b7f35e0-c679-3924-2f8d-a79252c22675",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "<",
+            "outputs": [
+                {
+                    "guid": "dffce4b7-231a-5bdd-0fe8-eaed1932c8b4",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1752.199951171875,
+                "y": 506.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "LessThanNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "66ccf069-a649-b51b-e7d0-d0cd73146b5c",
+            "inputs": [
+                {
+                    "guid": "95bf6de9-ca84-91e5-4879-628a9d87f39c",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "5aac96f9-82ff-2470-a3cb-a3b171c5ce99",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "*",
+            "outputs": [
+                {
+                    "guid": "524b9ebe-05e9-79bb-1e16-63be4eb9255b",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 592.5999755859375,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MultiplyNode"
+        },
+        {
+            "data": null,
+            "guid": "68db33b8-1f80-106d-265e-30c627a81331",
+            "inputs": [
+                {
+                    "guid": "d77220ca-dfc9-b791-0300-69e561a3919c",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "e7a809fa-834c-023c-b6e9-0f7cb2e25441",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "17e7a547-bbd2-0e76-9cfe-43e58009ffdc",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "1b1a9f14-d35e-d017-a4ea-512f1300f5de",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "7b0b597d-0a6e-5832-865e-791c674284e1",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1496.800048828125,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": null,
+            "guid": "6caf2d7f-578a-0fc7-1ab4-4262b6f139ce",
+            "inputs": [
+                {
+                    "guid": "beea562d-9657-0e22-65b4-a672f24436c4",
+                    "name": "Period",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 14,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "98b01472-7d20-8244-850b-11299d02dced",
+                    "name": "Index",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 1,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "193187bd-5420-4d66-2e91-10331305e2a0",
+                    "name": "Timeframe",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "ATR",
+            "outputs": [
+                {
+                    "guid": "11a9a2d5-1dc9-e527-4449-a7be293c5bd1",
+                    "name": "ATR",
+                    "type": 3
+                },
+                {
+                    "guid": "c32c23cb-6dc0-9aaf-7d75-9d97fde9ed60",
+                    "name": "Valid",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1761.800048828125,
+                "y": 610.0
+            },
+            "size": {
+                "x": 140.0,
+                "y": 120.0
+            },
+            "type": "ATRNode"
+        },
+        {
+            "data": null,
+            "guid": "79b6816e-c9a6-8cd3-0099-b33662fe6fb5",
+            "inputs": [
+                {
+                    "guid": "eafbe2ff-c7e0-ae0c-202a-ecafc7a33980",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "ff2ee33a-1c88-dd5e-1df7-bd52f9160949",
+                    "name": "Take Profit",
+                    "stored_bool": false,
+                    "stored_double": -1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "d0734d64-f9cc-4cad-b3c8-84fa18fe512a",
+                    "name": "Stop Loss",
+                    "stored_bool": false,
+                    "stored_double": -1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Set TP/SL",
+            "outputs": [
+                {
+                    "guid": "e26a5db0-9efc-a422-b23c-48ca0fc9e38b",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "bafb6d35-810b-9fe1-b6fa-bd29bb29239a",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "5e4e7684-b42d-5a5e-542c-17404feab4c4",
+                    "name": "Error",
+                    "type": 5
+                }
+            ],
+            "position": {
+                "x": 1192.5999755859375,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 140.0
+            },
+            "type": "SetTpSlNode"
+        },
+        {
+            "data": null,
+            "guid": "8375add8-414c-81f8-8fa8-4dff246528bc",
+            "inputs": [
+                {
+                    "guid": "57522e82-d8ec-c31f-6c5f-b81b55a4cb63",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                }
+            ],
+            "name": "Get Position",
+            "outputs": [
+                {
+                    "guid": "fee6ddc5-31df-d0d6-af38-0496ec2bb627",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "b7eec863-c325-6963-356f-cc4a415b1566",
+                    "name": "Has Position",
+                    "type": 4
+                },
+                {
+                    "guid": "55dc06e1-8ebf-b29c-c9ac-14cca85fc0f1",
+                    "name": "Is Long",
+                    "type": 4
+                },
+                {
+                    "guid": "730116c1-cc43-0389-5d04-fea200e3f7ab",
+                    "name": "Size",
+                    "type": 3
+                },
+                {
+                    "guid": "a900d662-68d2-a793-8840-5f1aca7b1fd0",
+                    "name": "Avg Price",
+                    "type": 3
+                },
+                {
+                    "guid": "e359692d-33fc-3601-dd4c-004b938fe422",
+                    "name": "Mark Price",
+                    "type": 3
+                },
+                {
+                    "guid": "567e3b6c-21ce-95f0-6603-8018b7c0d1a8",
+                    "name": "Liq Price",
+                    "type": 3
+                },
+                {
+                    "guid": "1a24ee07-0278-aa97-ccca-b9105c44ac32",
+                    "name": "Unrealised PnL",
+                    "type": 3
+                },
+                {
+                    "guid": "29d3195c-b55c-ff2f-6b74-5c39b8f425cd",
+                    "name": "Leverage",
+                    "type": 3
+                },
+                {
+                    "guid": "ac3d4348-5366-20f5-0b8d-fbfc304b5305",
+                    "name": "Take Profit",
+                    "type": 3
+                },
+                {
+                    "guid": "ba4778b9-591e-c828-20a3-4d388f63efa0",
+                    "name": "Stop Loss",
+                    "type": 3
+                },
+                {
+                    "guid": "57b70dda-9edb-a664-33f8-ec94bfa5542f",
+                    "name": "Success",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 350.0,
+                "y": 200.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 320.0
+            },
+            "type": "GetPositionNode"
+        },
+        {
+            "data": {
+                "variableGuid": "70e310c6-acbe-ed71-0a4f-b259911024e8"
+            },
+            "guid": "9042873a-2a45-814c-79a3-3cb993ce4566",
+            "inputs": [],
+            "name": "Get ATR Stop",
+            "outputs": [
+                {
+                    "guid": "6ecae2e8-853a-de7d-8333-3033bb9eb0cc",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 100.0,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "9c85da67-2257-6abc-321c-6beb6d192810",
+            "inputs": [
+                {
+                    "guid": "e82b0da3-c254-e50f-79f2-822d93fb01c2",
+                    "name": "Period",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 12,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "3ffe6da7-d1bc-bd15-abe3-fbc3570e5d2b",
+                    "name": "Index",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 1,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "6159306a-8ba1-b0dc-4492-c9f70e48325b",
+                    "name": "Timeframe",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "EMA",
+            "outputs": [
+                {
+                    "guid": "e22a2cb5-cd8a-195b-998d-dd11f49e3445",
+                    "name": "EMA",
+                    "type": 3
+                },
+                {
+                    "guid": "d62da460-9865-126a-902d-3f3bd19ef106",
+                    "name": "Valid",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1461.800048828125,
+                "y": 311.0
+            },
+            "size": {
+                "x": 140.0,
+                "y": 120.0
+            },
+            "type": "EMANode"
+        },
+        {
+            "data": null,
+            "guid": "Entry",
+            "inputs": [],
+            "name": "Entry",
+            "outputs": [
+                {
+                    "guid": "OutPinEntry",
+                    "name": "Entry",
+                    "type": 0
+                }
+            ],
+            "position": {
+                "x": 100.0,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "EntryNode"
+        },
+        {
+            "data": {
+                "variableGuid": "5413213b-3958-e1d8-8995-39fd41337acc"
+            },
+            "guid": "a6c9fa68-9683-dd4c-c324-e98766760f7c",
+            "inputs": [],
+            "name": "Get Leverage",
+            "outputs": [
+                {
+                    "guid": "657137e5-278e-c9c7-aa3f-0c0a7d9257b5",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 440.6000061035156,
+                "y": 856.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "a95b1f1d-227f-952e-78b5-147f9fa6924b",
+            "inputs": [
+                {
+                    "guid": "5a97c6f2-bd5e-43d0-ae06-185c3270ed65",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "4f12ccb1-688c-03b6-67ad-893a54c3dc02",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "e227be85-6db6-c14f-acc6-38d7732c7879",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "522a7ba0-b02b-fd43-5845-0d7b30368be4",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "89a2a7a1-357a-a66e-538d-ab9b4392393e",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1516.199951171875,
+                "y": 804.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "variableGuid": "ba609d3f-cdec-2e68-dcbb-c9feb0fc8b01"
+            },
+            "guid": "abac7548-8751-d0cb-06fc-95138c7cae41",
+            "inputs": [],
+            "name": "Get Reward Ratio",
+            "outputs": [
+                {
+                    "guid": "a857ff06-ab63-217b-5039-ae4f2ee410ce",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 371.20001220703125,
+                "y": 1095.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "ae298ca2-a757-f9e3-aa78-34b70f407e51",
+            "inputs": [
+                {
+                    "guid": "7443dc2f-daee-dd87-5871-fc1c951c0cbb",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "a9b7e502-d492-3b6e-6a6b-4fca83e4c705",
+                    "name": "Quantity",
+                    "stored_bool": false,
+                    "stored_double": 1.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "5e13c67d-a7e3-880d-3d7e-ea46ce5c0559",
+                    "name": "Leverage",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Open Long",
+            "outputs": [
+                {
+                    "guid": "8eb4c453-2ae5-48b9-30ab-62b24ef4cc24",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "050c638b-2681-3c6b-1ba8-ddfa6ea7cf90",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "6e45f7f3-27df-26d1-4ddb-aaf10417e916",
+                    "name": "Avg Price",
+                    "type": 3
+                },
+                {
+                    "guid": "41d82aea-b761-238f-5949-a18afd33dcb1",
+                    "name": "Mark Price",
+                    "type": 3
+                },
+                {
+                    "guid": "49fa149f-d7ef-8736-1d02-383274407d96",
+                    "name": "Liq Price",
+                    "type": 3
+                },
+                {
+                    "guid": "100a308d-87da-c56b-540f-6f4cefc19d09",
+                    "name": "Bust Price",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 633.2000122070313,
+                "y": 804.0
+            },
+            "size": {
+                "x": 180.0,
+                "y": 180.0
+            },
+            "type": "OpenLongNode"
+        },
+        {
+            "data": {
+                "variableGuid": "d5df93d1-71f9-0a52-cc2f-c98884d4a688"
+            },
+            "guid": "b2fe64d2-c267-ba12-de12-b50abb39e5db",
+            "inputs": [],
+            "name": "Get Fast EMA",
+            "outputs": [
+                {
+                    "guid": "df84a2b8-8a3d-29b1-7743-f07457599d6e",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 1269.199951171875,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "b6fb3f7e-a0c2-74a9-d948-f610be5fe8fb",
+            "inputs": [
+                {
+                    "guid": "1b68b4cd-e7d5-cc1e-c4f1-6af2c26aede5",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "e25f6f5c-1b6e-c2bd-6127-b5a6e3d118fd",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "814ff919-4009-3ad0-8cec-5c138cbf7800",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "c65244d8-5645-feda-bf72-42ead4feef2e",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "3eb47df2-daf8-30ff-db16-c49c1e0fea44",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 687.2000122070313,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "b98027b3-93c0-0d63-dbd7-928db51bf2c9",
+            "inputs": [
+                {
+                    "guid": "afa566f3-867c-dcc7-ab2c-1ebeaa18efa0",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "f2f1422e-eb70-8c51-dfb5-0cd119db7e99",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "+",
+            "outputs": [
+                {
+                    "guid": "83836acb-f04d-fff5-e36b-169152597be8",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 892.5999755859375,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "AddNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "bb6704bd-b7f6-8f1a-60b3-2df30df561c4",
+            "inputs": [
+                {
+                    "guid": "7e1f0429-9321-b005-a22f-8807fcf373fc",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "96c2212c-b531-538a-8ed9-4005a637b965",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "*",
+            "outputs": [
+                {
+                    "guid": "05a3bd7b-afee-1ed5-9e27-bd3f6506444b",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 592.5999755859375,
+                "y": 1095.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MultiplyNode"
+        },
+        {
+            "data": {
+                "a": 1,
+                "b": 1
+            },
+            "guid": "c0cf2921-94f7-f7eb-cdd1-de5f7580e52e",
+            "inputs": [
+                {
+                    "guid": "b683cc4c-599c-7bb1-9d6f-89a3b9b4a234",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                },
+                {
+                    "guid": "261b5996-a576-e7e9-50c0-b2a31aec0af3",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "!=",
+            "outputs": [
+                {
+                    "guid": "a245ff8b-86c7-5ffc-6300-8c3a7ab75a4f",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2352.199951171875,
+                "y": 506.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "NotEqualNode"
+        },
+        {
+            "data": {
+                "variableGuid": "966a136b-4276-d21b-5af8-a25c67d6cc05"
+            },
+            "guid": "c1a690c8-14f7-51b4-1810-16c11f56b59e",
+            "inputs": [
+                {
+                    "guid": "cf95f8b2-a5f5-8df1-e794-1a3fb4beb9c4",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "5b7c9b0a-adde-7b04-925f-ce2be495a6e3",
+                    "name": "Last Entry Candle",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 1
+                }
+            ],
+            "name": "Set Last Entry Candle",
+            "outputs": [
+                {
+                    "guid": "f5929c26-086e-1a6f-37fa-1e714f5c9144",
+                    "name": "",
+                    "type": 0
+                }
+            ],
+            "position": {
+                "x": 1183.800048828125,
+                "y": 804.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 80.0
+            },
+            "type": "SetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "c2ac7b96-a102-0ad9-a5e6-7885330fae9b",
+            "inputs": [
+                {
+                    "guid": "248cd0f5-43f5-6490-a087-0a4495125b7b",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "68fe9aca-93e0-8606-1bf3-9ecf75c74f06",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "32277272-9564-3007-2eaa-a463b935a4d0",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2052.199951171875,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": null,
+            "guid": "cb048f5a-c9b5-dfbf-2bad-6b4135bf6451",
+            "inputs": [
+                {
+                    "guid": "b0bd8ae3-e3dd-363e-ac91-7f375efc2aac",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "070af455-9949-ee66-6350-009267e23d8a",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "3328449e-f85b-da19-8a71-c4093674bca1",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2052.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": null,
+            "guid": "cca8bb80-f007-62f6-7804-b8fd90ba0dce",
+            "inputs": [],
+            "name": "Get Current Candle",
+            "outputs": [
+                {
+                    "guid": "6d6bf4f5-bee4-8b1c-0fc8-2628fe7c4018",
+                    "name": "Index",
+                    "type": 1
+                },
+                {
+                    "guid": "b5ccf262-35c8-0967-3f1b-ef48ff1850df",
+                    "name": "Timestamp",
+                    "type": 1
+                },
+                {
+                    "guid": "972d2244-af7a-2b2a-6d74-aad32ce02ca4",
+                    "name": "Open",
+                    "type": 3
+                },
+                {
+                    "guid": "f33486d9-0c36-ac3e-9662-2ccd50454c75",
+                    "name": "High",
+                    "type": 3
+                },
+                {
+                    "guid": "38ecd53c-4c42-c284-55bd-505bdf728c45",
+                    "name": "Low",
+                    "type": 3
+                },
+                {
+                    "guid": "22478967-23ab-e478-c2e5-d15d034afc1b",
+                    "name": "Close",
+                    "type": 3
+                },
+                {
+                    "guid": "e1fc345d-aae1-03d5-7eff-326515f796be",
+                    "name": "Volume",
+                    "type": 2
+                },
+                {
+                    "guid": "b654bc8d-c58c-7e3d-e3b9-40652de42e92",
+                    "name": "Mcap",
+                    "type": 2
+                }
+            ],
+            "position": {
+                "x": 950.5999755859375,
+                "y": 804.0
+            },
+            "size": {
+                "x": 160.0,
+                "y": 230.0
+            },
+            "type": "GetCurrentCandleDataNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "d92f9b02-a7ed-27c0-0ffa-269d625946c0",
+            "inputs": [
+                {
+                    "guid": "a3e0683e-1c35-d790-c3f3-61698984950e",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "e1380aad-af39-44cf-7a0d-64c83be0e5bb",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "<",
+            "outputs": [
+                {
+                    "guid": "97ca0056-6bf6-6d85-e4c6-18ad41d4db3a",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1752.199951171875,
+                "y": 200.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "LessThanNode"
+        },
+        {
+            "data": null,
+            "guid": "e25bb891-773e-4912-0e98-2b40a687d446",
+            "inputs": [
+                {
+                    "guid": "a064f23c-6fce-6200-6282-23b6d25e625f",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "9118badd-79f4-3090-efe6-5e49fc08fa25",
+                    "name": "Percent",
+                    "stored_bool": false,
+                    "stored_double": 100.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Close Long",
+            "outputs": [
+                {
+                    "guid": "4723b467-90f4-d3e7-6957-026d5c27fb35",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "c75c35c9-5adb-1600-6108-49ae4fb85a48",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "422c447d-2cb0-c545-a978-2b5e79e29631",
+                    "name": "Price",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 2643.199951171875,
+                "y": 200.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 100.0
+            },
+            "type": "CloseLongNode"
+        },
+        {
+            "data": null,
+            "guid": "e2c2ba01-0664-e330-2439-579d444d5a76",
+            "inputs": [
+                {
+                    "guid": "ff30c746-19f9-97b6-6438-4906324a6a19",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "08603d79-48dc-4478-a2e7-b656810f612b",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "344d5ef1-fe0d-9dae-a8b4-b9d5ec2ceb26",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "7168126a-443b-e06e-632b-ad47b7044f05",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "16be34d3-77de-e103-257d-9cd8bbfdc7bb",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2352.199951171875,
+                "y": 200.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "variableGuid": "46c2168b-c737-1983-9c71-2157c0e90654"
+            },
+            "guid": "e3550b45-a85e-4284-b35a-9669ca859cca",
+            "inputs": [],
+            "name": "Get ATR Period",
+            "outputs": [
+                {
+                    "guid": "1221a131-4f8d-46ef-69a8-b9396ba622be",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 1545.199951171875,
+                "y": 676.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "e4a0dd6b-80e6-5d21-450e-48dfd5463d1e",
+            "inputs": [
+                {
+                    "guid": "a7409ac6-a4f6-a154-9557-4544d2f9bb09",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "b3d5843f-2fbf-5461-1c2c-0b81cf550ce9",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "/",
+            "outputs": [
+                {
+                    "guid": "3e7464d0-2be0-548d-4e4c-df6b2781e99b",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 333.20001220703125,
+                "y": 804.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "DivideNode"
+        },
+        {
+            "data": {
+                "variableGuid": "966a136b-4276-d21b-5af8-a25c67d6cc05"
+            },
+            "guid": "eb87f8e9-e652-d724-1e3f-8718127cce7b",
+            "inputs": [],
+            "name": "Get Last Entry Candle",
+            "outputs": [
+                {
+                    "guid": "3b369f83-6edc-7aa8-b36e-5b80d193f17d",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 2094.800048828125,
+                "y": 645.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": {
+                "variableGuid": "026c3db1-3fde-4cda-8bb8-dc86c112a6ba"
+            },
+            "guid": "ed143068-bc8d-a242-38ac-2d299c0bc17a",
+            "inputs": [],
+            "name": "Get Position USDT",
+            "outputs": [
+                {
+                    "guid": "73013ab3-a3c2-baa7-0361-b706b34e7911",
+                    "name": "",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 104.5999984741211,
+                "y": 804.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "ede83167-fbc8-1c00-8ff5-46fd6a5491b9",
+            "inputs": [
+                {
+                    "guid": "d33a0278-928e-35a8-7474-9e8d68285d6f",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "bda5d867-9974-3a4a-0ca7-5d89cbf09839",
+                    "name": "Percent",
+                    "stored_bool": false,
+                    "stored_double": 100.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": "Close Long",
+            "outputs": [
+                {
+                    "guid": "18fc0bbf-d71b-49b7-5cd6-c8e4d9c1a2c6",
+                    "name": "",
+                    "type": 0
+                },
+                {
+                    "guid": "c5a03853-584b-3211-e7e3-35afe01a3c2b",
+                    "name": "Success",
+                    "type": 4
+                },
+                {
+                    "guid": "4cf196c6-7eb3-507e-238f-9aebf47cb224",
+                    "name": "Price",
+                    "type": 3
+                }
+            ],
+            "position": {
+                "x": 1787.800048828125,
+                "y": 1043.0
+            },
+            "size": {
+                "x": 200.0,
+                "y": 100.0
+            },
+            "type": "CloseLongNode"
+        },
+        {
+            "data": null,
+            "guid": "f11afcb0-592e-fb8d-d41e-ddb9323758b3",
+            "inputs": [
+                {
+                    "guid": "4fed0090-1e27-e236-63c8-469210c683d3",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                },
+                {
+                    "guid": "90ae42df-558b-2b9f-d2d3-84191c6a3bf1",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Pure AND",
+            "outputs": [
+                {
+                    "guid": "f5ad7afc-834a-e2a7-0936-cf7f1dc31a79",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1752.199951171875,
+                "y": 558.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 90.0
+            },
+            "type": "BoolAndNode"
+        },
+        {
+            "data": {
+                "variableGuid": "d5df93d1-71f9-0a52-cc2f-c98884d4a688"
+            },
+            "guid": "f27b89f7-4c6e-a80b-1fa0-ad0031d53d75",
+            "inputs": [],
+            "name": "Get Fast EMA",
+            "outputs": [
+                {
+                    "guid": "1cd34008-c429-615f-657d-e82a0fd4cc8e",
+                    "name": "",
+                    "type": 1
+                }
+            ],
+            "position": {
+                "x": 1269.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 60.0
+            },
+            "type": "GetVariableNode"
+        },
+        {
+            "data": null,
+            "guid": "f82b6b09-583d-ab60-2b44-3884671ad01c",
+            "inputs": [
+                {
+                    "guid": "9a594fe4-cc22-1589-033d-7aa8949172a6",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 0
+                },
+                {
+                    "guid": "6ef6b5ef-e535-6fb1-30a0-381b0cee0465",
+                    "name": "",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 4
+                }
+            ],
+            "name": "Branch",
+            "outputs": [
+                {
+                    "guid": "90357aa4-3943-a409-3b7a-fd0192b7d140",
+                    "name": "True",
+                    "type": 0
+                },
+                {
+                    "guid": "9ed84863-c6a1-6754-9353-396b684b7106",
+                    "name": "False",
+                    "type": 0
+                },
+                {
+                    "guid": "68ebe8a2-fede-6430-285d-efc71f198180",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 2952.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 120.0,
+                "y": 110.0
+            },
+            "type": "BranchNode"
+        },
+        {
+            "data": {
+                "a": 3,
+                "b": 3
+            },
+            "guid": "fc2eb1b7-221f-e349-77ef-7a92aae7214f",
+            "inputs": [
+                {
+                    "guid": "7aaa4543-0e81-f73a-7b19-1d524c13f8da",
+                    "name": "A",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                },
+                {
+                    "guid": "08dd38cd-d2c3-51f0-fc00-52882b676a6d",
+                    "name": "B",
+                    "stored_bool": false,
+                    "stored_double": 0.0,
+                    "stored_float": 0.0,
+                    "stored_int": 0,
+                    "stored_string": "",
+                    "type": 3
+                }
+            ],
+            "name": ">",
+            "outputs": [
+                {
+                    "guid": "52b21525-7310-807d-891d-c3b4ea96a4a8",
+                    "name": "",
+                    "type": 4
+                }
+            ],
+            "position": {
+                "x": 1752.199951171875,
+                "y": 454.0
+            },
+            "size": {
+                "x": 90.0,
+                "y": 80.0
+            },
+            "type": "MoreThanNode"
+        },
+        {
+            "data": null,
+            "guid": "fdac5027-d749-eb39-9173-ddff68ae1199",
+            "inputs": [],
+            "name": "Get Current Candle",
+            "outputs": [
+                {
+                    "guid": "98afd675-8936-3e32-a8f6-a92883eca987",
+                    "name": "Index",
+                    "type": 1
+                },
+                {
+                    "guid": "93ec82c5-4290-752c-c3e2-6e08bd7d5aa1",
+                    "name": "Timestamp",
+                    "type": 1
+                },
+                {
+                    "guid": "124a9bb5-3067-2409-655f-ad290d05261f",
+                    "name": "Open",
+                    "type": 3
+                },
+                {
+                    "guid": "027ce22b-fdbe-9825-cb03-ff7ab618e2d2",
+                    "name": "High",
+                    "type": 3
+                },
+                {
+                    "guid": "193cdf4d-ca6a-5108-3665-c1892db97c24",
+                    "name": "Low",
+                    "type": 3
+                },
+                {
+                    "guid": "c2d341cb-8042-5265-84a0-547e670ac618",
+                    "name": "Close",
+                    "type": 3
+                },
+                {
+                    "guid": "2a24be12-5fe3-68e4-d9e9-f52e1e774daf",
+                    "name": "Volume",
+                    "type": 2
+                },
+                {
+                    "guid": "28af7235-dfb4-363a-1d55-d5af61da2449",
+                    "name": "Mcap",
+                    "type": 2
+                }
+            ],
+            "position": {
+                "x": 100.0,
+                "y": 850.0
+            },
+            "size": {
+                "x": 160.0,
+                "y": 230.0
+            },
+            "type": "GetCurrentCandleDataNode"
+        }
+    ],
+    "variables": [
+        {
+            "global": false,
+            "guid": "026c3db1-3fde-4cda-8bb8-dc86c112a6ba",
+            "name": "Position USDT",
+            "parameter": true,
+            "type": 3,
+            "value": 1000.0
+        },
+        {
+            "global": false,
+            "guid": "46c2168b-c737-1983-9c71-2157c0e90654",
+            "name": "ATR Period",
+            "parameter": true,
+            "type": 1,
+            "value": 14
+        },
+        {
+            "global": false,
+            "guid": "5413213b-3958-e1d8-8995-39fd41337acc",
+            "name": "Leverage",
+            "parameter": true,
+            "type": 3,
+            "value": 1.0
+        },
+        {
+            "global": false,
+            "guid": "70e310c6-acbe-ed71-0a4f-b259911024e8",
+            "name": "ATR Stop",
+            "parameter": true,
+            "type": 3,
+            "value": 2.0
+        },
+        {
+            "global": true,
+            "guid": "966a136b-4276-d21b-5af8-a25c67d6cc05",
+            "name": "Last Entry Candle",
+            "parameter": false,
+            "type": 1,
+            "value": -1
+        },
+        {
+            "global": false,
+            "guid": "ba609d3f-cdec-2e68-dcbb-c9feb0fc8b01",
+            "name": "Reward Ratio",
+            "parameter": true,
+            "type": 3,
+            "value": 2.0
+        },
+        {
+            "global": false,
+            "guid": "d5df93d1-71f9-0a52-cc2f-c98884d4a688",
+            "name": "Fast EMA",
+            "parameter": true,
+            "type": 1,
+            "value": 20
+        },
+        {
+            "global": false,
+            "guid": "ebd05706-b934-750c-222e-b5993c3c5d58",
+            "name": "Slow EMA",
+            "parameter": true,
+            "type": 1,
+            "value": 50
+        }
+    ]
+}
