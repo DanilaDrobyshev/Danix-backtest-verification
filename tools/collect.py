@@ -27,7 +27,7 @@ def main():
             continue
         rows = json.load(open(p, encoding="utf-8-sig"))["candles"]
         with open(os.path.join(ROOT, "data", "candles", e["file"]), "w", newline="") as f:
-            w = csv.writer(f)
+            w = csv.writer(f, lineterminator="\n")
             w.writerow(["timestamp_ms", "open", "high", "low", "close", "volume"])
             w.writerows([[int(r[0])] + r[1:6] for r in rows])
     for r in cfg["runs"]:
