@@ -12,13 +12,15 @@
   "blocked_orders": 0,
   "closed_positions": 247,
   "commission_paid": 271.674673,
-  "equity_end": 9558.776223,
+  "equity_end": 9557.5289,
   "execution": {
    "latency_ms": 0,
    "spread": 0.0,
    "spread_cost": 123.488485,
    "spread_pct": 0.05
   },
+  "funding_charges": 54,
+  "funding_paid": 1.247323,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -29,14 +31,14 @@
    "last_close": 83573.8,
    "to": "2026-09-30 23:00"
   },
-  "max_drawdown": 441.223777,
-  "max_drawdown_pct": 4.412238,
+  "max_drawdown": 442.4711,
+  "max_drawdown_pct": 4.424711,
   "open_positions": 0,
   "open_positions_list": [],
   "orders": 494,
   "profit_factor": 0.299819,
-  "realized_pnl": -441.223777,
-  "return_pct": -4.412238,
+  "realized_pnl": -442.4711,
+  "return_pct": -4.424711,
   "starting_balance": 10000.0,
   "ticks": {
    "mode": "candles",
@@ -50,6 +52,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 882,
+   "source": "exchange",
+   "symbol": "BTCUSDT"
+  },
   "futures_fee_source": "parameters",
   "latency_ms": 0,
   "maker_fee_percent": 0.02,
@@ -80,7 +88,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 1)"
  },
  "log": [
-  "[PriceCollector] bybit BTCUSDT 60: 7773 candles (8737 cached, 2 new, 0 older fetched, 8737 in cache)"
+  "[PriceCollector] bybit BTCUSDT 60: 7799 candles (8763 cached, 2 new, 0 older fetched, 8763 in cache)"
  ],
  "positions": [
   {
@@ -3797,6 +3805,7 @@
   "name": "VERIFY EMA ATR bar-close",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "BTCUSDT",
    "category": "linear",
    "interval": "60",

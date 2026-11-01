@@ -44,7 +44,8 @@
   "trades": 0,
   "unrealized_pnl": 4.45,
   "warnings": [
-   "no closed trades: return_pct comes only from unrealized_pnl of the position(s) still open at the end, win_rate and profit_factor are not defined"
+   "no closed trades: return_pct comes only from unrealized_pnl of the position(s) still open at the end, win_rate and profit_factor are not defined",
+   "funding is not included: positions held through funding times would pay or receive it on the exchange (pass funding_file or funding_rate_pct)"
   ],
   "win_rate_pct": 0.0,
   "worst_trade": 0.0

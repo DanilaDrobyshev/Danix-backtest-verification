@@ -19,9 +19,15 @@
  "rejected_by_constraints": 1,
  "runs": 39,
  "saved": false,
- "seconds": 0.9030284,
+ "seconds": 0.9055254,
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 882,
+   "source": "exchange",
+   "symbol": "SOLUSDT"
+  },
   "futures_fee_source": "parameters",
   "maker_fee_percent": 0.02,
   "margin_fee_percent": 0.055,
@@ -71,31 +77,31 @@
    },
    "rank": 1,
    "stability": {
-    "mean_objective": 0.209579,
-    "mean_return_pct": 0.209579,
-    "min_objective": -0.316903,
+    "mean_objective": 0.171563,
+    "mean_return_pct": 0.171563,
+    "min_objective": -0.352768,
     "neighbors": 3,
-    "ratio": 0.142
+    "ratio": 0.119
    },
    "test": {
     "closed_positions": 45,
     "liquidations": 0,
-    "max_drawdown_pct": 0.795587,
-    "objective": 1.501064,
+    "max_drawdown_pct": 0.806948,
+    "objective": 1.477347,
     "open_positions": 0,
     "profit_factor": 1.539418,
-    "return_pct": 1.501064,
+    "return_pct": 1.477347,
     "trades": 45,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 103,
     "liquidations": 0,
-    "max_drawdown_pct": 1.543236,
-    "objective": 1.474693,
+    "max_drawdown_pct": 1.533241,
+    "objective": 1.443665,
     "open_positions": 0,
     "profit_factor": 1.176186,
-    "return_pct": 1.474693,
+    "return_pct": 1.443665,
     "trades": 103,
     "unrealized_pnl": 0.0
    }
@@ -107,31 +113,31 @@
    },
    "rank": 2,
    "stability": {
-    "mean_objective": 0.176452,
-    "mean_return_pct": 0.176452,
-    "min_objective": -0.416283,
+    "mean_objective": 0.138138,
+    "mean_return_pct": 0.138138,
+    "min_objective": -0.453045,
     "neighbors": 3,
-    "ratio": 0.129
+    "ratio": 0.103
    },
    "test": {
     "closed_positions": 41,
     "liquidations": 0,
-    "max_drawdown_pct": 0.638601,
-    "objective": 1.781574,
+    "max_drawdown_pct": 0.638715,
+    "objective": 1.75791,
     "open_positions": 0,
     "profit_factor": 1.715133,
-    "return_pct": 1.781574,
+    "return_pct": 1.75791,
     "trades": 41,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 87,
     "liquidations": 0,
-    "max_drawdown_pct": 2.409069,
-    "objective": 1.372709,
+    "max_drawdown_pct": 2.43776,
+    "objective": 1.338704,
     "open_positions": 0,
     "profit_factor": 1.169667,
-    "return_pct": 1.372709,
+    "return_pct": 1.338704,
     "trades": 87,
     "unrealized_pnl": 0.0
    }
@@ -143,31 +149,31 @@
    },
    "rank": 3,
    "stability": {
-    "mean_objective": 1.423701,
-    "mean_return_pct": 1.423701,
-    "min_objective": 1.372709,
+    "mean_objective": 1.391185,
+    "mean_return_pct": 1.391185,
+    "min_objective": 1.338704,
     "neighbors": 2,
-    "ratio": 1.136
+    "ratio": 1.147
    },
    "test": {
     "closed_positions": 58,
     "liquidations": 0,
-    "max_drawdown_pct": 1.688364,
-    "objective": 0.865651,
+    "max_drawdown_pct": 1.708479,
+    "objective": 0.832787,
     "open_positions": 0,
     "profit_factor": 1.22742,
-    "return_pct": 0.865651,
+    "return_pct": 0.832787,
     "trades": 58,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 135,
     "liquidations": 0,
-    "max_drawdown_pct": 1.852606,
-    "objective": 1.253125,
+    "max_drawdown_pct": 1.850021,
+    "objective": 1.212911,
     "open_positions": 0,
     "profit_factor": 1.118087,
-    "return_pct": 1.253125,
+    "return_pct": 1.212911,
     "trades": 135,
     "unrealized_pnl": 0.0
    }
@@ -179,31 +185,31 @@
    },
    "rank": 4,
    "stability": {
-    "mean_objective": -0.89167,
-    "mean_return_pct": -0.89167,
-    "min_objective": -1.666633,
+    "mean_objective": -0.930835,
+    "mean_return_pct": -0.930835,
+    "min_objective": -1.709696,
     "neighbors": 3,
-    "ratio": -0.855
+    "ratio": -0.933
    },
    "test": {
     "closed_positions": 32,
     "liquidations": 0,
-    "max_drawdown_pct": 0.699117,
-    "objective": 1.02842,
+    "max_drawdown_pct": 0.706621,
+    "objective": 1.011252,
     "open_positions": 0,
     "profit_factor": 1.487239,
-    "return_pct": 1.02842,
+    "return_pct": 1.011252,
     "trades": 32,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 77,
     "liquidations": 0,
-    "max_drawdown_pct": 1.977326,
-    "objective": 1.043403,
+    "max_drawdown_pct": 2.005497,
+    "objective": 0.997562,
     "open_positions": 0,
     "profit_factor": 1.155291,
-    "return_pct": 1.043403,
+    "return_pct": 0.997562,
     "trades": 77,
     "unrealized_pnl": 0.0
    }
@@ -215,31 +221,31 @@
    },
    "rank": 5,
    "stability": {
-    "mean_objective": -0.874833,
-    "mean_return_pct": -0.874833,
-    "min_objective": -2.59743,
+    "mean_objective": -0.912411,
+    "mean_return_pct": -0.912411,
+    "min_objective": -2.637357,
     "neighbors": 4,
-    "ratio": -1.224
+    "ratio": -1.348
    },
    "test": {
     "closed_positions": 30,
     "liquidations": 0,
-    "max_drawdown_pct": 1.253566,
-    "objective": 0.83467,
+    "max_drawdown_pct": 1.265277,
+    "objective": 0.809278,
     "open_positions": 0,
     "profit_factor": 1.366098,
-    "return_pct": 0.83467,
+    "return_pct": 0.809278,
     "trades": 30,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 64,
     "liquidations": 0,
-    "max_drawdown_pct": 1.965003,
-    "objective": 0.714931,
+    "max_drawdown_pct": 1.987149,
+    "objective": 0.676872,
     "open_positions": 0,
     "profit_factor": 1.103688,
-    "return_pct": 0.714931,
+    "return_pct": 0.676872,
     "trades": 64,
     "unrealized_pnl": 0.0
    }
@@ -251,31 +257,31 @@
    },
    "rank": 6,
    "stability": {
-    "mean_objective": -1.277434,
-    "mean_return_pct": -1.277434,
-    "min_objective": -3.268815,
+    "mean_objective": -1.316778,
+    "mean_return_pct": -1.316778,
+    "min_objective": -3.301437,
     "neighbors": 4,
-    "ratio": 7.171
+    "ratio": 6.159
    },
    "test": {
     "closed_positions": 25,
     "liquidations": 0,
-    "max_drawdown_pct": 0.649575,
-    "objective": 1.039984,
+    "max_drawdown_pct": 0.650957,
+    "objective": 1.02048,
     "open_positions": 0,
     "profit_factor": 1.526988,
-    "return_pct": 1.039984,
+    "return_pct": 1.02048,
     "trades": 25,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 57,
     "liquidations": 0,
-    "max_drawdown_pct": 2.090073,
-    "objective": -0.178133,
+    "max_drawdown_pct": 2.115415,
+    "objective": -0.213789,
     "open_positions": 0,
     "profit_factor": 0.972623,
-    "return_pct": -0.178133,
+    "return_pct": -0.213789,
     "trades": 57,
     "unrealized_pnl": 0.0
    }
@@ -287,31 +293,31 @@
    },
    "rank": 7,
    "stability": {
-    "mean_objective": 0.811196,
-    "mean_return_pct": 0.811196,
-    "min_objective": -0.31755,
+    "mean_objective": 0.773471,
+    "mean_return_pct": 0.773471,
+    "min_objective": -0.365359,
     "neighbors": 4,
-    "ratio": -2.638
+    "ratio": -2.239
    },
    "test": {
     "closed_positions": 33,
     "liquidations": 0,
-    "max_drawdown_pct": 0.584486,
-    "objective": 1.99328,
+    "max_drawdown_pct": 0.593993,
+    "objective": 1.966692,
     "open_positions": 0,
     "profit_factor": 1.984878,
-    "return_pct": 1.99328,
+    "return_pct": 1.966692,
     "trades": 33,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 71,
     "liquidations": 0,
-    "max_drawdown_pct": 2.710949,
-    "objective": -0.307485,
+    "max_drawdown_pct": 2.733159,
+    "objective": -0.345453,
     "open_positions": 0,
     "profit_factor": 0.959244,
-    "return_pct": -0.307485,
+    "return_pct": -0.345453,
     "trades": 71,
     "unrealized_pnl": 0.0
    }
@@ -323,31 +329,31 @@
    },
    "rank": 8,
    "stability": {
-    "mean_objective": 0.733515,
-    "mean_return_pct": 0.733515,
-    "min_objective": -0.31755,
+    "mean_objective": 0.691956,
+    "mean_return_pct": 0.691956,
+    "min_objective": -0.365359,
     "neighbors": 3,
-    "ratio": -2.315
+    "ratio": -1.962
    },
    "test": {
     "closed_positions": 39,
     "liquidations": 0,
-    "max_drawdown_pct": 0.86114,
-    "objective": 1.252836,
+    "max_drawdown_pct": 0.871009,
+    "objective": 1.230944,
     "open_positions": 0,
     "profit_factor": 1.487656,
-    "return_pct": 1.252836,
+    "return_pct": 1.230944,
     "trades": 39,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 92,
     "liquidations": 0,
-    "max_drawdown_pct": 2.653412,
-    "objective": -0.316903,
+    "max_drawdown_pct": 2.675385,
+    "objective": -0.352768,
     "open_positions": 0,
     "profit_factor": 0.962846,
-    "return_pct": -0.316903,
+    "return_pct": -0.352768,
     "trades": 92,
     "unrealized_pnl": 0.0
    }
@@ -359,31 +365,31 @@
    },
    "rank": 9,
    "stability": {
-    "mean_objective": -0.373499,
-    "mean_return_pct": -0.373499,
-    "min_objective": -0.691473,
+    "mean_objective": -0.410513,
+    "mean_return_pct": -0.410513,
+    "min_objective": -0.730042,
     "neighbors": 4,
-    "ratio": 1.176
+    "ratio": 1.124
    },
    "test": {
     "closed_positions": 29,
     "liquidations": 0,
-    "max_drawdown_pct": 0.899052,
-    "objective": 1.541417,
+    "max_drawdown_pct": 0.910662,
+    "objective": 1.515893,
     "open_positions": 0,
     "profit_factor": 1.780668,
-    "return_pct": 1.541417,
+    "return_pct": 1.515893,
     "trades": 29,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 68,
     "liquidations": 0,
-    "max_drawdown_pct": 2.835213,
-    "objective": -0.31755,
+    "max_drawdown_pct": 2.866844,
+    "objective": -0.365359,
     "open_positions": 0,
     "profit_factor": 0.958447,
-    "return_pct": -0.31755,
+    "return_pct": -0.365359,
     "trades": 68,
     "unrealized_pnl": 0.0
    }
@@ -395,31 +401,31 @@
    },
    "rank": 10,
    "stability": {
-    "mean_objective": 0.69588,
-    "mean_return_pct": 0.69588,
+    "mean_objective": 0.671859,
+    "mean_return_pct": 0.671859,
     "min_objective": 0.0,
     "neighbors": 3,
-    "ratio": -1.672
+    "ratio": -1.483
    },
    "test": {
     "closed_positions": 35,
     "liquidations": 0,
-    "max_drawdown_pct": 0.7291,
-    "objective": 1.373988,
+    "max_drawdown_pct": 0.739444,
+    "objective": 1.348788,
     "open_positions": 0,
     "profit_factor": 1.559563,
-    "return_pct": 1.373988,
+    "return_pct": 1.348788,
     "trades": 35,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 72,
     "liquidations": 0,
-    "max_drawdown_pct": 3.34087,
-    "objective": -0.416283,
+    "max_drawdown_pct": 3.360455,
+    "objective": -0.453045,
     "open_positions": 0,
     "profit_factor": 0.947951,
-    "return_pct": -0.416283,
+    "return_pct": -0.453045,
     "trades": 72,
     "unrealized_pnl": 0.0
    }
@@ -431,31 +437,31 @@
    },
    "rank": 11,
    "stability": {
-    "mean_objective": -1.810652,
-    "mean_return_pct": -1.810652,
-    "min_objective": -2.238301,
+    "mean_objective": -1.843627,
+    "mean_return_pct": -1.843627,
+    "min_objective": -2.277189,
     "neighbors": 3,
-    "ratio": 3.111
+    "ratio": 2.999
    },
    "test": {
     "closed_positions": 21,
     "liquidations": 0,
-    "max_drawdown_pct": 0.813818,
-    "objective": 0.081183,
+    "max_drawdown_pct": 0.821189,
+    "objective": 0.067332,
     "open_positions": 0,
     "profit_factor": 1.042511,
-    "return_pct": 0.081183,
+    "return_pct": 0.067332,
     "trades": 21,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 44,
     "liquidations": 0,
-    "max_drawdown_pct": 1.927885,
-    "objective": -0.581951,
+    "max_drawdown_pct": 1.951798,
+    "objective": -0.614671,
     "open_positions": 0,
     "profit_factor": 0.89825,
-    "return_pct": -0.581951,
+    "return_pct": -0.614671,
     "trades": 44,
     "unrealized_pnl": 0.0
    }
@@ -467,31 +473,31 @@
    },
    "rank": 12,
    "stability": {
-    "mean_objective": -0.913942,
-    "mean_return_pct": -0.913942,
-    "min_objective": -2.238301,
+    "mean_objective": -0.955746,
+    "mean_return_pct": -0.955746,
+    "min_objective": -2.277189,
     "neighbors": 4,
-    "ratio": 1.322
+    "ratio": 1.309
    },
    "test": {
     "closed_positions": 26,
     "liquidations": 0,
-    "max_drawdown_pct": 0.986427,
-    "objective": 1.0531,
+    "max_drawdown_pct": 0.993368,
+    "objective": 1.032309,
     "open_positions": 0,
     "profit_factor": 1.525034,
-    "return_pct": 1.0531,
+    "return_pct": 1.032309,
     "trades": 26,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 67,
     "liquidations": 0,
-    "max_drawdown_pct": 2.11202,
-    "objective": -0.691473,
+    "max_drawdown_pct": 2.139129,
+    "objective": -0.730042,
     "open_positions": 0,
     "profit_factor": 0.908481,
-    "return_pct": -0.691473,
+    "return_pct": -0.730042,
     "trades": 67,
     "unrealized_pnl": 0.0
    }
@@ -503,31 +509,31 @@
    },
    "rank": 13,
    "stability": {
-    "mean_objective": -0.82798,
-    "mean_return_pct": -0.82798,
-    "min_objective": -1.074008,
+    "mean_objective": -0.857611,
+    "mean_return_pct": -0.857611,
+    "min_objective": -1.10055,
     "neighbors": 2,
-    "ratio": 0.788
+    "ratio": 0.797
    },
    "test": {
     "closed_positions": 22,
     "liquidations": 0,
-    "max_drawdown_pct": 0.538857,
-    "objective": 0.634394,
+    "max_drawdown_pct": 0.545254,
+    "objective": 0.622841,
     "open_positions": 0,
     "profit_factor": 1.350472,
-    "return_pct": 0.634394,
+    "return_pct": 0.622841,
     "trades": 22,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 39,
     "liquidations": 0,
-    "max_drawdown_pct": 2.279755,
-    "objective": -1.050336,
+    "max_drawdown_pct": 2.297411,
+    "objective": -1.075694,
     "open_positions": 0,
     "profit_factor": 0.795506,
-    "return_pct": -1.050336,
+    "return_pct": -1.075694,
     "trades": 39,
     "unrealized_pnl": 0.0
    }
@@ -539,31 +545,31 @@
    },
    "rank": 14,
    "stability": {
-    "mean_objective": -2.185817,
-    "mean_return_pct": -2.185817,
-    "min_objective": -3.268815,
+    "mean_objective": -2.218107,
+    "mean_return_pct": -2.218107,
+    "min_objective": -3.301437,
     "neighbors": 3,
-    "ratio": 2.035
+    "ratio": 2.015
    },
    "test": {
     "closed_positions": 22,
     "liquidations": 0,
-    "max_drawdown_pct": 0.966926,
-    "objective": 0.002297,
+    "max_drawdown_pct": 0.971258,
+    "objective": -0.01039,
     "open_positions": 0,
     "profit_factor": 1.001119,
-    "return_pct": 0.002297,
+    "return_pct": -0.01039,
     "trades": 22,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 42,
     "liquidations": 0,
-    "max_drawdown_pct": 2.456453,
-    "objective": -1.074008,
+    "max_drawdown_pct": 2.473932,
+    "objective": -1.10055,
     "open_positions": 0,
     "profit_factor": 0.808515,
-    "return_pct": -1.074008,
+    "return_pct": -1.10055,
     "trades": 42,
     "unrealized_pnl": 0.0
    }
@@ -575,31 +581,31 @@
    },
    "rank": 15,
    "stability": {
-    "mean_objective": -0.549959,
-    "mean_return_pct": -0.549959,
-    "min_objective": -2.14332,
+    "mean_objective": -0.590218,
+    "mean_return_pct": -0.590218,
+    "min_objective": -2.177997,
     "neighbors": 2,
-    "ratio": 0.33
+    "ratio": 0.345
    },
    "test": {
     "closed_positions": 35,
     "liquidations": 0,
-    "max_drawdown_pct": 1.022907,
-    "objective": 0.952255,
+    "max_drawdown_pct": 1.033513,
+    "objective": 0.932296,
     "open_positions": 0,
     "profit_factor": 1.427473,
-    "return_pct": 0.952255,
+    "return_pct": 0.932296,
     "trades": 35,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 74,
     "liquidations": 0,
-    "max_drawdown_pct": 2.822475,
-    "objective": -1.666633,
+    "max_drawdown_pct": 2.849869,
+    "objective": -1.709696,
     "open_positions": 0,
     "profit_factor": 0.790162,
-    "return_pct": -1.666633,
+    "return_pct": -1.709696,
     "trades": 74,
     "unrealized_pnl": 0.0
    }
@@ -611,31 +617,31 @@
    },
    "rank": 16,
    "stability": {
-    "mean_objective": -0.980019,
-    "mean_return_pct": -0.980019,
-    "min_objective": -1.666633,
+    "mean_objective": -1.018136,
+    "mean_return_pct": -1.018136,
+    "min_objective": -1.709696,
     "neighbors": 3,
-    "ratio": 0.457
+    "ratio": 0.467
    },
    "test": {
     "closed_positions": 28,
     "liquidations": 0,
-    "max_drawdown_pct": 0.922987,
-    "objective": 0.969001,
+    "max_drawdown_pct": 0.927832,
+    "objective": 0.950466,
     "open_positions": 0,
     "profit_factor": 1.475588,
-    "return_pct": 0.969001,
+    "return_pct": 0.950466,
     "trades": 28,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 59,
     "liquidations": 0,
-    "max_drawdown_pct": 2.52726,
-    "objective": -2.14332,
+    "max_drawdown_pct": 2.556115,
+    "objective": -2.177997,
     "open_positions": 0,
     "profit_factor": 0.694366,
-    "return_pct": -2.14332,
+    "return_pct": -2.177997,
     "trades": 59,
     "unrealized_pnl": 0.0
    }
@@ -647,31 +653,31 @@
    },
    "rank": 17,
    "stability": {
-    "mean_objective": -0.631391,
-    "mean_return_pct": -0.631391,
-    "min_objective": -1.074008,
+    "mean_objective": -0.664763,
+    "mean_return_pct": -0.664763,
+    "min_objective": -1.10055,
     "neighbors": 4,
-    "ratio": 0.282
+    "ratio": 0.292
    },
    "test": {
     "closed_positions": 24,
     "liquidations": 0,
-    "max_drawdown_pct": 0.558691,
-    "objective": 1.291306,
+    "max_drawdown_pct": 0.565919,
+    "objective": 1.273504,
     "open_positions": 0,
     "profit_factor": 1.762564,
-    "return_pct": 1.291306,
+    "return_pct": 1.273504,
     "trades": 24,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 53,
     "liquidations": 0,
-    "max_drawdown_pct": 2.761537,
-    "objective": -2.238301,
+    "max_drawdown_pct": 2.792527,
+    "objective": -2.277189,
     "open_positions": 0,
     "profit_factor": 0.665938,
-    "return_pct": -2.238301,
+    "return_pct": -2.277189,
     "trades": 53,
     "unrealized_pnl": 0.0
    }
@@ -683,31 +689,31 @@
    },
    "rank": 18,
    "stability": {
-    "mean_objective": -0.851295,
-    "mean_return_pct": -0.851295,
-    "min_objective": -3.268815,
+    "mean_objective": -0.874855,
+    "mean_return_pct": -0.874855,
+    "min_objective": -3.301437,
     "neighbors": 3,
-    "ratio": 0.328
+    "ratio": 0.332
    },
    "test": {
     "closed_positions": 24,
     "liquidations": 0,
-    "max_drawdown_pct": 0.649776,
-    "objective": 1.198073,
+    "max_drawdown_pct": 0.651158,
+    "objective": 1.178655,
     "open_positions": 0,
     "profit_factor": 1.638279,
-    "return_pct": 1.198073,
+    "return_pct": 1.178655,
     "trades": 24,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 56,
     "liquidations": 0,
-    "max_drawdown_pct": 3.475762,
-    "objective": -2.59743,
+    "max_drawdown_pct": 3.506472,
+    "objective": -2.637357,
     "open_positions": 0,
     "profit_factor": 0.654681,
-    "return_pct": -2.59743,
+    "return_pct": -2.637357,
     "trades": 56,
     "unrealized_pnl": 0.0
    }
@@ -719,31 +725,31 @@
    },
    "rank": 19,
    "stability": {
-    "mean_objective": -1.28319,
-    "mean_return_pct": -1.28319,
-    "min_objective": -2.59743,
+    "mean_objective": -1.317232,
+    "mean_return_pct": -1.317232,
+    "min_objective": -2.637357,
     "neighbors": 3,
-    "ratio": 0.393
+    "ratio": 0.399
    },
    "test": {
     "closed_positions": 24,
     "liquidations": 0,
-    "max_drawdown_pct": 0.66372,
-    "objective": 1.198801,
+    "max_drawdown_pct": 0.666767,
+    "objective": 1.180255,
     "open_positions": 0,
     "profit_factor": 1.657426,
-    "return_pct": 1.198801,
+    "return_pct": 1.180255,
     "trades": 24,
     "unrealized_pnl": 0.0
    },
    "train": {
     "closed_positions": 50,
     "liquidations": 0,
-    "max_drawdown_pct": 3.716632,
-    "objective": -3.268815,
+    "max_drawdown_pct": 3.74125,
+    "objective": -3.301437,
     "open_positions": 0,
     "profit_factor": 0.536853,
-    "return_pct": -3.268815,
+    "return_pct": -3.301437,
     "trades": 50,
     "unrealized_pnl": 0.0
    }
@@ -771,6 +777,7 @@
   "name": "VERIFY EMA ATR bar-close",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "SOLUSDT",
    "category": "linear",
    "interval": "60",

@@ -32,6 +32,7 @@ class Book:
         self.ex, self.lev = ex, leverage
         self.pos = None
         self.trades = []
+        self.funding_paid, self.funding_charges = 0.0, 0
 
     def open(self, t, price, qty):
         liq = price * (1.0 - (1.0 / self.lev - MMR - LIQ_TAKER - INSURANCE))
@@ -66,6 +67,25 @@ class Book:
     def check_liquidation(self, t, low):
         if self.pos is not None and low <= self.pos["liq"]:
             self.liquidate(t)
+
+
+class Funding:
+    """Funding (TradingStatsManager::ApplyFunding): every funding time T up to the current candle open or trade
+    is charged once, before TP/SL, liquidation and the strategy of that candle or trade, at its price (candle open
+    or trade price, not the mark price), to a position opened at or before T: qty x price x rate, a long pays a
+    positive rate. It comes out of the balance and realized PnL, not out of the trade PnL."""
+
+    def __init__(self, data):
+        self.t, self.rate = data if data is not None else ((), ())
+        self.k = 0
+
+    def apply(self, book, t, price):
+        while self.k < len(self.t) and self.t[self.k] <= t:
+            p = book.pos
+            if p is not None and p["open_t"] <= self.t[self.k]:
+                book.funding_paid += p["quantity"] * price * self.rate[self.k]
+                book.funding_charges += 1
+            self.k += 1
 
 
 def set_tp_sl(book, tp, sl, market, close_fill):
@@ -129,17 +149,19 @@ class FixedTpSl:
 
 # ---------------------------------------------------------------- candle model
 
-def run_candles(C, start, end, warmup, strategy_cls, params, ex):
-    """Candle backtest: orders by the candle high/low, then the strategy once on the candle close
-    (Index 0 = the candle that just closed); a market order fills at that close, or with ping at the
-    next candle open."""
+def run_candles(C, start, end, warmup, strategy_cls, params, ex, funding=None):
+    """Candle backtest: funding at the candle open, orders by the candle high/low, then the strategy once on
+    the candle close (Index 0 = the candle that just closed); a market order fills at that close, or with ping
+    at the next candle open."""
     lo = start - warmup
     st = strategy_cls(C, lo, end, params)
     book = Book(ex, st.lev)
+    fund = Funding(funding)
     step = int(C.t[1] - C.t[0]) if len(C) > 1 else 60000
     last_entry = None
     for i in range(start, end):
         nxt = C.t[i + 1] if i + 1 < len(C) else C.t[i] + step
+        fund.apply(book, int(C.t[i]), C.o[i])
         book.process_orders(int(C.t[i]), C.o[i], C.l[i], C.h[i], lambda t, p, buy, tpsl: (t, ex.spread(p, buy)))
         book.check_liquidation(int(C.t[i]), C.l[i])
 
@@ -162,7 +184,7 @@ def run_candles(C, start, end, warmup, strategy_cls, params, ex):
 
 # ---------------------------------------------------------------- tick model
 
-def run_ticks(C, start, end, warmup, strategy_cls, params, ex, tick_t, tick_p):
+def run_ticks(C, start, end, warmup, strategy_cls, params, ex, tick_t, tick_p, funding=None):
     """Tick backtest: for every trade of the candle, TP/SL and liquidation on the move from the previous
     trade, then the strategy on the forming candle. The strategy of this pack reads only closed candles
     (Index 1 = the candle before the forming one), so it can enter at the first trade of a candle.
@@ -170,6 +192,7 @@ def run_ticks(C, start, end, warmup, strategy_cls, params, ex, tick_t, tick_p):
     lo = start - warmup
     st = strategy_cls(C, lo, end, params)
     book = Book(ex, st.lev)
+    fund = Funding(funding)
     step = int(C.t[1] - C.t[0])
     last_entry = None
     last_price = C.c[start - 1] if start > 0 else None
@@ -181,6 +204,7 @@ def run_ticks(C, start, end, warmup, strategy_cls, params, ex, tick_t, tick_p):
         j = i - 1  # last closed candle as the strategy sees it
         if a == b:
             info["without_ticks"] += 1
+            fund.apply(book, t0, C.o[i])
             book.process_orders(t0, C.o[i], C.l[i], C.h[i], lambda t, p, buy, tpsl: (t, ex.spread(p, buy)))
             book.check_liquidation(t0, C.l[i])
 
@@ -220,6 +244,7 @@ def run_ticks(C, start, end, warmup, strategy_cls, params, ex, tick_t, tick_p):
 
             frm = last_price if last_price is not None else tp
             low, high = min(frm, tp), max(frm, tp)
+            fund.apply(book, tt, tp)
             book.process_orders(tt, frm, low, high, lambda t, p, buy, tpsl: fill(t, p, buy))
             book.check_liquidation(tt, low)
             last_price = tp

@@ -3,5 +3,5 @@ data/ticks/*.part
 danix_runs/raw/
 __pycache__/
 .venv/
-danix_runs_prev/
+danix_runs_prev*/
 report/console.txt

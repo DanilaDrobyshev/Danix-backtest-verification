@@ -91,6 +91,18 @@ def load_ticks(symbol, day):
     return t, p_
 
 
+def load_funding(symbol):
+    """data/funding/<symbol>.csv (tools/fetch_funding.py): Bybit funding times in ms and rates, oldest first."""
+    t, r = [], []
+    with open(path("data", "funding", symbol + ".csv")) as f:
+        rd = csv.reader(f)
+        next(rd)
+        for x in rd:
+            t.append(int(x[0]))
+            r.append(float(x[1]))
+    return np.array(t, dtype=np.int64), np.array(r, dtype=float)
+
+
 def ema(x, n):
     """EMA seeded with the first value, alpha = 2 / (n + 1) (Danix SDK/Indicators)."""
     a = 2.0 / (n + 1)

@@ -19,6 +19,8 @@
    "spread_cost": 14.999136,
    "spread_pct": 0.05
   },
+  "funding_charges": 0,
+  "funding_paid": 0.0,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -53,6 +55,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 12,
+   "source": "exchange",
+   "symbol": "SOLUSDT"
+  },
   "futures_fee_source": "parameters",
   "latency_ms": 0,
   "maker_fee_percent": 0.02,
@@ -88,7 +96,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 2)"
  },
  "log": [
-  "[PriceCollector] bybit SOLUSDT 5: 37928 candles (185684 cached, 2 new, 0 older fetched, 185684 in cache)"
+  "[PriceCollector] bybit SOLUSDT 5: 38236 candles (185992 cached, 2 new, 0 older fetched, 185992 in cache)"
  ],
  "positions": [
   {
@@ -550,6 +558,7 @@
   "name": "VERIFY EMA ATR next-tick",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "SOLUSDT",
    "category": "linear",
    "interval": "5",

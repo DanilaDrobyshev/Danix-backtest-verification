@@ -12,13 +12,15 @@
   "blocked_orders": 0,
   "closed_positions": 244,
   "commission_paid": 268.349871,
-  "equity_end": 9640.50725,
+  "equity_end": 9639.96159,
   "execution": {
    "latency_ms": 500,
    "spread": 0.0,
    "spread_cost": 0.0,
    "spread_pct": 0.0
   },
+  "funding_charges": 11,
+  "funding_paid": 0.54566,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -29,14 +31,14 @@
    "last_close": 118.07,
    "to": "2026-09-30 23:00"
   },
-  "max_drawdown": 362.71515,
-  "max_drawdown_pct": 3.627151,
+  "max_drawdown": 363.26081,
+  "max_drawdown_pct": 3.632608,
   "open_positions": 0,
   "open_positions_list": [],
   "orders": 488,
   "profit_factor": 0.513298,
-  "realized_pnl": -359.49275,
-  "return_pct": -3.594928,
+  "realized_pnl": -360.03841,
+  "return_pct": -3.600384,
   "starting_balance": 10000.0,
   "ticks": {
    "mode": "candles",
@@ -50,6 +52,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 882,
+   "source": "exchange",
+   "symbol": "SOLUSDT"
+  },
   "futures_fee_source": "parameters",
   "latency_ms": 500,
   "maker_fee_percent": 0.02,
@@ -80,7 +88,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 1)"
  },
  "log": [
-  "[PriceCollector] bybit SOLUSDT 60: 7773 candles (16456 cached, 2 new, 0 older fetched, 16456 in cache)"
+  "[PriceCollector] bybit SOLUSDT 60: 7799 candles (16482 cached, 2 new, 0 older fetched, 16482 in cache)"
  ],
  "positions": [
   {
@@ -3752,6 +3760,7 @@
   "name": "VERIFY EMA ATR bar-close",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "SOLUSDT",
    "category": "linear",
    "interval": "60",

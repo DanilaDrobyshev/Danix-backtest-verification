@@ -42,15 +42,28 @@ def run_setup(run, d):
     return C, start, end, warmup, params, ex, strat
 
 
+def run_funding(run, d):
+    """Funding rates when Danix charged them (settings.funding from the exchange), else None."""
+    f = d.get("settings", {}).get("funding") or {}
+    if f.get("source") != "exchange" or "error" in f:
+        return None
+    return cm.load_funding(run["pair"])
+
+
 def check_totals(d, book):
+    """realized_pnl = sum of trade PnL - funding paid."""
     r = d["results"]
-    pnl = sum(t["pnl"] for t in book.trades)
+    pnl = sum(t["pnl"] for t in book.trades) - book.funding_paid
     fees = sum(t["fees"] for t in book.trades) + (book.pos["fee_in"] if book.pos else 0)
     bad = []
     if abs(pnl - r["realized_pnl"]) > 1e-4:
         bad.append(f"realized {pnl:.6f} vs {r['realized_pnl']}")
     if abs(fees - r["commission_paid"]) > 1e-4:
         bad.append(f"fees {fees:.6f} vs {r['commission_paid']}")
+    if abs(book.funding_paid - r.get("funding_paid", 0.0)) > 1e-6:
+        bad.append(f"funding {book.funding_paid:.6f} vs {r.get('funding_paid', 0.0)}")
+    if book.funding_charges != r.get("funding_charges", 0):
+        bad.append(f"funding charges {book.funding_charges} vs {r.get('funding_charges', 0)}")
     return bad, pnl
 
 
@@ -77,13 +90,15 @@ def check_ref(run, d, tick_cache):
                 tick_cache[key] = (np.concatenate(tt), np.concatenate(pp))
         if tick_cache[key] is None:
             return "SKIP", "tick archive not downloaded (python tools/fetch_ticks.py)", None
-        book = re_.run_ticks(C, start, end, warmup, strat, params, ex, *tick_cache[key])
+        book = re_.run_ticks(C, start, end, warmup, strat, params, ex, *tick_cache[key], funding=run_funding(run, d))
     else:
-        book = re_.run_candles(C, start, end, warmup, strat, params, ex)
+        book = re_.run_candles(C, start, end, warmup, strat, params, ex, funding=run_funding(run, d))
     dz = cm.danix_trades(d)
     m, n, first = cm.compare_trades(book.trades, dz)
     bad, pnl = check_totals(d, book)
     detail = f"{m}/{n} trades identical, PnL {pnl:.4f} vs Danix {d['results']['realized_pnl']:.4f}"
+    if book.funding_charges:
+        detail += f" (funding {book.funding_paid:.4f} in {book.funding_charges} charges)"
     if first:
         detail += f" | first difference: {first}"
     if bad:
@@ -147,6 +162,8 @@ def main():
             C, start, end, warmup, params, ex, strat = run_setup(run, d)
             fee = float(run["args"].get("margin_fee_percent", cm.FEE_DEFAULT))
             dz = cm.danix_trades(d)
+            # these libraries have no funding: compare with the Danix PnL before funding
+            dpnl = d["results"]["realized_pnl"] + d["results"].get("funding_paid", 0.0)
             for name, fn in (("backtesting.py", external.backtesting_py), ("vectorbt", external.vectorbt)):
                 try:
                     tr = fn(C, start, end, warmup, params, fee)
@@ -155,11 +172,11 @@ def main():
                     continue
                 m, n, first = cm.compare_trades(tr, dz, price_rel=1e-6, fields=("open_t", "close_t", "entry", "exit"))
                 pnl = sum(t["pnl"] for t in tr)
-                det = f"{m}/{n} trades (entry/exit time and price), PnL {pnl:.4f} vs Danix {d['results']['realized_pnl']:.4f}"
-                ok = m == n and n > 0 and abs(pnl - d["results"]["realized_pnl"]) < 0.01
+                det = f"{m}/{n} trades (entry/exit time and price), PnL {pnl:.4f} vs Danix {dpnl:.4f} before funding"
+                ok = m == n and n > 0 and abs(pnl - dpnl) < 0.01
                 k = known.get((rid, name))
                 if not ok and k and m == n - 1 and first and first.startswith(f"trade #{k['trade']}:") \
-                        and abs(pnl - d["results"]["realized_pnl"]) < 0.01:
+                        and abs(pnl - dpnl) < 0.01:
                     add("other engines", f"{rid} / {name}", "KNOWN", det + f" | trade #{k['trade']}: {k['reason']}")
                     continue
                 add("other engines", f"{rid} / {name}", "PASS" if ok else "FAIL", det + (f" | {first}" if first else ""))

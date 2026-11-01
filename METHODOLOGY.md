@@ -63,6 +63,7 @@ Set TP/SL is refused when a level is already on the wrong side of the market pri
 | Spread | `spread_pct`: candle and trade prices are treated as mid prices; a market buy pays half the spread above, a sell half below. Applies to market orders and TP/SL fills, not to maker limit fills or liquidation. |
 | Ping | `latency_ms`: in the tick model a market order or a triggered TP/SL fills at the first trade at least that many ms after the signal; in the candle model a strategy order fills at the next candle open. |
 | Liquidation | Isolated margin. Long: `entry × (1 − (1/leverage − 0.5% MMR − 0.055% − 0.1% insurance))`. The whole margin and the entry fee are lost; no exit fee. |
+| Funding | Historical Bybit rates from the public API (`data/funding/`). At each funding timestamp an open position pays `qty × candle open × rate` (the trade price in the tick model); a long pays a positive rate, a short receives it. It is part of `realized_pnl` (`funding_paid`), not of the trade PnL. Spot has none. |
 | Netting | One position per symbol and side, as on Bybit. |
 | Unrealized PnL | Of a position still open at the end: `(last close - entry) x qty - entry fee` (the entry fee is already paid). It is part of `return_pct`, not of `realized_pnl`. |
 
@@ -71,7 +72,7 @@ Set TP/SL is refused when a level is already on the wrong side of the market pri
 | Check | How |
 |---|---|
 | Hand-calculated scenarios (`scenarios/`) | 7 small CSV files: TP, SL, both in one candle, gap through the stop, gap through the take profit, position open at the end, liquidation at x10. The expected numbers are in `scenarios/expected.json` with the arithmetic written out. |
-| Reference engine | Every candle and tick run: the same trades (open/close time to the millisecond, prices and quantity to 1e-9, PnL to 1e-6), the same total PnL and fees. |
+| Reference engine | Every candle and tick run: the same trades (open/close time to the millisecond, prices and quantity to 1e-9, PnL to 1e-6), the same total PnL, fees and funding. |
 | backtesting.py 0.6.6 and vectorbt 1.2.0 | Candle runs without spread and ping: the same entry and exit time and price for every trade and the same PnL within 0.01 USDT. |
 | Look-ahead | The same run with the history cut on 2026-05-15 must give exactly the same trades up to the cut. A strategy or engine that peeks at future candles would change them. |
 | Costs | The same strategy with no fees, with fees, with spread and with ping; every one of these runs is also checked by the reference engine. |
@@ -89,7 +90,7 @@ We list these so you do not have to find them yourself.
    cover it.
 3. **TP and SL in one candle** in the candle model: SL first. Real order inside the candle may differ; the tick model
    resolves it.
-4. **No funding payments.**
+4. **Funding uses the candle open or the trade price**, not the mark price the exchange uses.
 5. **Liquidation uses fixed default risk parameters** (MMR 0.5%), not Bybit's tiered risk limits for large positions.
 6. **Trades within the same millisecond** keep the order of the Bybit archive, which is written newest first, so
    within one millisecond they are replayed in reverse. It only matters when several trades of one millisecond cross a

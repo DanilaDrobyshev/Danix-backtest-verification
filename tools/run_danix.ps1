@@ -48,3 +48,4 @@ $meta = @{
 }
 [IO.File]::WriteAllText((Join-Path $raw "_meta.json"), ($meta | ConvertTo-Json))
 & $Python -I (Join-Path $root "tools\collect.py")
+if ($LASTEXITCODE -ne 0) { throw "collect.py failed" }

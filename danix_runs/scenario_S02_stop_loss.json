@@ -34,6 +34,9 @@
   "tpsl_rejected": 0,
   "trades": 1,
   "unrealized_pnl": 0.0,
+  "warnings": [
+   "funding is not included: positions held through funding times would pay or receive it on the exchange (pass funding_file or funding_rate_pct)"
+  ],
   "win_rate_pct": 0.0,
   "worst_trade": -21.089
  },

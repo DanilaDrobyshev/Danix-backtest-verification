@@ -13,6 +13,8 @@
   "closed_positions": 25,
   "commission_paid": 0.0,
   "equity_end": 9977.41827,
+  "funding_charges": 0,
+  "funding_paid": 0.0,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -47,6 +49,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 23,
+   "source": "exchange",
+   "symbol": "STRKUSDT"
+  },
   "futures_fee_source": "parameters",
   "maker_fee_percent": 0.0,
   "margin_fee_percent": 0.0,
@@ -79,7 +87,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 2)"
  },
  "log": [
-  "[PriceCollector] bybit STRKUSDT 5: 37928 candles (102546 cached, 2 new, 0 older fetched, 102546 in cache)"
+  "[PriceCollector] bybit STRKUSDT 5: 38236 candles (102854 cached, 2 new, 0 older fetched, 102854 in cache)"
  ],
  "positions": [
   {
@@ -466,6 +474,7 @@
   "name": "VERIFY EMA ATR next-tick",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "STRKUSDT",
    "category": "linear",
    "interval": "5",

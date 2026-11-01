@@ -12,13 +12,15 @@
   "blocked_orders": 0,
   "closed_positions": 30,
   "commission_paid": 32.992826,
-  "equity_end": 9959.223407,
+  "equity_end": 9959.380037,
   "execution": {
    "latency_ms": 200,
    "spread": 0.0,
    "spread_cost": 0.0,
    "spread_pct": 0.0
   },
+  "funding_charges": 1,
+  "funding_paid": -0.15663,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -29,14 +31,14 @@
    "last_close": 68.07,
    "to": "2026-06-24 23:55"
   },
-  "max_drawdown": 42.424565,
-  "max_drawdown_pct": 0.424246,
+  "max_drawdown": 42.267935,
+  "max_drawdown_pct": 0.422679,
   "open_positions": 0,
   "open_positions_list": [],
   "orders": 60,
   "profit_factor": 0.115993,
-  "realized_pnl": -40.776593,
-  "return_pct": -0.407766,
+  "realized_pnl": -40.619963,
+  "return_pct": -0.4062,
   "starting_balance": 10000.0,
   "ticks": {
    "candles_with_ticks": 576,
@@ -56,6 +58,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 12,
+   "source": "exchange",
+   "symbol": "SOLUSDT"
+  },
   "futures_fee_source": "parameters",
   "latency_ms": 200,
   "maker_fee_percent": 0.02,
@@ -91,7 +99,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 2)"
  },
  "log": [
-  "[PriceCollector] bybit SOLUSDT 5: 37928 candles (185684 cached, 2 new, 0 older fetched, 185684 in cache)",
+  "[PriceCollector] bybit SOLUSDT 5: 38236 candles (185992 cached, 2 new, 0 older fetched, 185992 in cache)",
   "[Warning] TP/SL rejected: TP/SL is on the wrong side of the price (price 68.97, TP 68.9664, SL 68.8136). The position stays without this TP/SL: check the levels (TP of a long above the price, SL below; for a short the other way) and close the position when Success = false."
  ],
  "positions": [
@@ -554,6 +562,7 @@
   "name": "VERIFY EMA ATR next-tick",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "SOLUSDT",
    "category": "linear",
    "interval": "5",

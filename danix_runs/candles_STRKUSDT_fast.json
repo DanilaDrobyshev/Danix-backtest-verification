@@ -12,7 +12,9 @@
   "blocked_orders": 0,
   "closed_positions": 247,
   "commission_paid": 271.661188,
-  "equity_end": 9657.771838,
+  "equity_end": 9656.683239,
+  "funding_charges": 86,
+  "funding_paid": 1.088598,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -23,14 +25,14 @@
    "last_close": 0.04314,
    "to": "2026-09-30 23:00"
   },
-  "max_drawdown": 365.034102,
-  "max_drawdown_pct": 3.649085,
+  "max_drawdown": 366.1227,
+  "max_drawdown_pct": 3.659967,
   "open_positions": 0,
   "open_positions_list": [],
   "orders": 494,
   "profit_factor": 0.66224,
-  "realized_pnl": -342.228162,
-  "return_pct": -3.422282,
+  "realized_pnl": -343.316761,
+  "return_pct": -3.433168,
   "starting_balance": 10000.0,
   "ticks": {
    "mode": "candles",
@@ -44,6 +46,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 1764,
+   "source": "exchange",
+   "symbol": "STRKUSDT"
+  },
   "futures_fee_source": "parameters",
   "maker_fee_percent": 0.02,
   "margin_fee_percent": 0.055,
@@ -71,7 +79,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 1)"
  },
  "log": [
-  "[PriceCollector] bybit STRKUSDT 60: 7773 candles (8017 cached, 2 new, 0 older fetched, 8017 in cache)"
+  "[PriceCollector] bybit STRKUSDT 60: 7799 candles (8043 cached, 2 new, 0 older fetched, 8043 in cache)"
  ],
  "positions": [
   {
@@ -3788,6 +3796,7 @@
   "name": "VERIFY EMA ATR bar-close",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "STRKUSDT",
    "category": "linear",
    "interval": "60",

@@ -13,6 +13,8 @@
   "closed_positions": 19,
   "commission_paid": 20.894608,
   "equity_end": 9969.300993,
+  "funding_charges": 0,
+  "funding_paid": 0.0,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -47,6 +49,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 12,
+   "source": "exchange",
+   "symbol": "BTCUSDT"
+  },
   "futures_fee_source": "parameters",
   "maker_fee_percent": 0.02,
   "margin_fee_percent": 0.055,
@@ -66,8 +74,8 @@
   "tested_first_ms": 1782172800000,
   "tested_last_ms": 1782345300000,
   "ticks": {
-   "days_cached": 0,
-   "days_downloaded": 2,
+   "days_cached": 2,
+   "days_downloaded": 0,
    "days_without_archive": 0
   },
   "timeframe": "5m",
@@ -79,9 +87,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 2)"
  },
  "log": [
-  "[PriceCollector] bybit BTCUSDT 5: 37928 candles (80564 cached, 2 new, 0 older fetched, 80564 in cache)",
-  "[Ticks] bybit BTCUSDT 2026-06-23 (1/2)...",
-  "[Ticks] bybit BTCUSDT 2026-06-24 (2/2)..."
+  "[PriceCollector] bybit BTCUSDT 5: 38235 candles (80871 cached, 2 new, 0 older fetched, 80871 in cache)"
  ],
  "positions": [
   {
@@ -378,6 +384,7 @@
   "name": "VERIFY EMA ATR next-tick",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "BTCUSDT",
    "category": "linear",
    "interval": "5",

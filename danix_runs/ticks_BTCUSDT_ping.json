@@ -19,6 +19,8 @@
    "spread_cost": 0.0,
    "spread_pct": 0.0
   },
+  "funding_charges": 0,
+  "funding_paid": 0.0,
   "last_positions": [],
   "liquidations": 0,
   "market": {
@@ -53,6 +55,12 @@
  },
  "settings": {
   "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "bybit",
+   "points": 12,
+   "source": "exchange",
+   "symbol": "BTCUSDT"
+  },
   "futures_fee_source": "parameters",
   "latency_ms": 200,
   "maker_fee_percent": 0.02,
@@ -88,7 +96,7 @@
   "warmup_needed_by": "EMA (Period 13 (x3 for the EMA to settle), Index 2)"
  },
  "log": [
-  "[PriceCollector] bybit BTCUSDT 5: 37928 candles (80564 cached, 2 new, 0 older fetched, 80564 in cache)"
+  "[PriceCollector] bybit BTCUSDT 5: 38235 candles (80871 cached, 2 new, 0 older fetched, 80871 in cache)"
  ],
  "positions": [
   {
@@ -385,6 +393,7 @@
   "name": "VERIFY EMA ATR next-tick",
   "source": {
    "type": "exchange",
+   "exchange": "bybit",
    "symbol": "BTCUSDT",
    "category": "linear",
    "interval": "5",

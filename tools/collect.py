@@ -18,8 +18,21 @@ def sha(p):
     return h.hexdigest()
 
 
+def check_exchange(name, args, d):
+    """Danix takes candles, ticks and funding from the exchange selected in its settings, not from the arguments."""
+    want = args.get("source", {}).get("exchange")
+    got = (d.get("source") or {}).get("exchange")
+    if want and got and want != got:
+        raise SystemExit(f"{name}: Danix answered with {got} data, the pack needs {want}: "
+                         f"switch Settings > Exchanges to {want} and run again")
+
+
 def main():
     cfg = json.load(open(os.path.join(ROOT, "config", "runs.json")))
+    # before anything is written: a run on the wrong exchange must not overwrite data/candles
+    for name, args, p in [(e["file"], e["args"], os.path.join(RAW, "candles_" + e["file"] + ".json")) for e in cfg["exports"]] +             [(r["id"], r["args"], os.path.join(RAW, r["id"] + ".json")) for r in cfg["runs"]]:
+        if os.path.exists(p):
+            check_exchange(name, args, json.load(open(p, encoding="utf-8-sig")))
     os.makedirs(os.path.join(ROOT, "data", "candles"), exist_ok=True)
     for e in cfg["exports"]:
         p = os.path.join(RAW, "candles_" + e["file"] + ".json")
@@ -51,7 +64,8 @@ def main():
             json.dump(out, f, indent=1)
     if os.path.exists(os.path.join(RAW, "_meta.json")):
         shutil.copy(os.path.join(RAW, "_meta.json"), os.path.join(ROOT, "danix_runs", "_meta.json"))
-    files = sorted(glob.glob(os.path.join(ROOT, "data", "candles", "*.csv")) + glob.glob(os.path.join(ROOT, "scenarios", "*.csv")))
+    files = sorted(glob.glob(os.path.join(ROOT, "data", "candles", "*.csv")) + glob.glob(os.path.join(ROOT, "data", "funding", "*.csv"))
+                   + glob.glob(os.path.join(ROOT, "scenarios", "*.csv")))
     with open(os.path.join(ROOT, "data", "SHA256SUMS.txt"), "w") as f:
         for p in files:
             f.write(f"{sha(p)}  {os.path.relpath(p, ROOT).replace(os.sep, '/')}\n")

@@ -37,6 +37,9 @@ The same runs on every push in GitHub Actions (`.github/workflows/verify.yml`).
    through the Danix command line and rewrites `danix_runs/` and `data/candles/`.
 3. `python verify.py`, and `git diff danix_runs` shows whether your Danix produced the same trades.
 
+Or all of it in one command: `powershell -ExecutionPolicy Bypass -File tools\update.ps1 -Danix "C:\path\to\Danix.exe"`
+(runs Danix, downloads the trade archive and funding rates, runs `verify.py` and prints only what did not pass).
+
 Backtests are deterministic: the same data and settings always give the same trades.
 
 ## What is in here
@@ -47,6 +50,7 @@ Backtests are deterministic: the same data and settings always give the same tra
 | `danix_runs/` | Danix results: summary, settings, data source and every trade. |
 | `data/candles/` | Bybit candles used by the runs (1h for Jan–Sep 2026, 5m for the tick days), with SHA-256 in `data/SHA256SUMS.txt`. |
 | `data/ticks/` | Filled by `tools/fetch_ticks.py` from public.bybit.com; hashes in `data/ticks/SHA256SUMS.txt`. |
+| `data/funding/` | Bybit funding rates of the three symbols (`timestamp_ms,rate`), downloaded by `tools/fetch_funding.py` from the public API; hashes in `data/SHA256SUMS.txt`. |
 | `scenarios/` | Seven 8-candle CSV files and `expected.json` with the result computed by hand. |
 | `strategies/` | The three strategies as Danix files. |
 | `verification/` | `ref_engine.py` (independent engine), `external.py` (backtesting.py, vectorbt), helpers. |
