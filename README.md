@@ -78,6 +78,26 @@ Backtests are deterministic: the same data and settings always give the same tra
 
 The strategies are test strategies, not trading advice; several of the runs lose money.
 
+## KuCoin
+
+The candle runs are repeated on KuCoin USDT-M futures (no tick runs and no scenarios yet): `config/runs_kucoin.json`
+has the same strategies, periods and parameters as the Bybit candle runs and walk-forward, on XBTUSDTM, SOLUSDTM and
+STRKUSDTM, with the KuCoin taker fee 0.06% (maker 0.02%).
+
+| Path | Contents |
+|---|---|
+| `danix_runs/kucoin/` | Danix results of the KuCoin runs. |
+| `data/kucoin/candles/` | KuCoin 1h candles as Danix loads them (`/api/v1/kline/query`, hours without trades filled, see METHODOLOGY). |
+| `data/kucoin/funding/` | KuCoin funding rates (`/api/v1/contract/funding-rates`) from `tools/fetch_funding.py --exchange kucoin`. |
+| `report/kucoin/REPORT.md` | Latest KuCoin result. |
+
+```bash
+python verify.py --exchange kucoin
+```
+
+To re-run the Danix side, select KuCoin in Danix Settings > Exchanges (a backtest always uses the selected exchange),
+then `powershell -ExecutionPolicy Bypass -File tools\update.ps1 -Exchange kucoin -Danix "C:\path\to\Danix.exe"`.
+
 ## License
 
-Code: MIT. Market data belongs to Bybit and is included only to make the checks reproducible.
+Code: MIT. Market data belongs to Bybit and KuCoin and is included only to make the checks reproducible.

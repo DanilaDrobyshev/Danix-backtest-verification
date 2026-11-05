@@ -79,6 +79,20 @@ Set TP/SL is refused when a level is already on the wrong side of the market pri
 | Ticks vs candles | The same days in both models: how many candle-model entries reappear at the first trade of the next candle, and how far apart the prices are. |
 | Walk-forward | Danix's optimizer on the first 70% of the period, the top parameter sets re-run on the last 30%, with the mean result of neighbouring parameters. All sets are published, profitable or not. This part is reported, not pass/fail. |
 
+## KuCoin
+
+The KuCoin runs (`config/runs_kucoin.json`, candle model only) use the same execution rules and the same reference
+engine; only the data and the fee differ.
+
+| | KuCoin USDT-M futures |
+|---|---|
+| Symbols | XBTUSDTM, SOLUSDTM, STRKUSDTM (Danix also accepts BTCUSDT and maps it to the contract). |
+| Candles | `/api/v1/kline/query`. KuCoin sends no candle for an interval without trades; Danix inserts one at the previous close (open = high = low = close, volume 0), as Bybit and Binance deliver it. Volume is converted from lots to coins (× contract multiplier). |
+| Fee | Taker 0.06%, maker 0.02% (VIP 0), passed explicitly by the runs. |
+| Funding | `/api/v1/contract/funding-rates`; the time is `timepoint` (the settlement time), applied by the same rule as on Bybit. The interval follows the data (STRKUSDTM settles every 4 hours, BTC and SOL every 8). |
+| Quantity | Not rounded to the contract lot in a backtest, as on Bybit. |
+| Liquidation | The same default formula; it does not occur in these runs (leverage 1). |
+
 ## Known limitations
 
 We list these so you do not have to find them yourself.

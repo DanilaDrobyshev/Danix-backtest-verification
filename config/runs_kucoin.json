@@ -1,0 +1,780 @@
+{
+ "exports": [
+  {
+   "file": "XBTUSDTM_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "SOLUSDTM_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  },
+  {
+   "file": "STRKUSDTM_60.csv",
+   "args": {
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2025-12-01",
+     "to": "2026-09-30"
+    },
+    "limit": 20000
+   }
+  }
+ ],
+ "runs": [
+  {
+   "id": "candles_XBTUSDTM_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_XBTUSDTM_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_XBTUSDTM_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_XBTUSDTM_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_XBTUSDTM_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_XBTUSDTM_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "XBTUSDTM",
+   "group": "lookahead",
+   "full": "candles_XBTUSDTM_fast"
+  },
+  {
+   "id": "walkforward_XBTUSDTM",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "XBTUSDTM",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "XBTUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  },
+  {
+   "id": "candles_SOLUSDTM_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_SOLUSDTM_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_SOLUSDTM_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDTM_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDTM_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_SOLUSDTM_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "SOLUSDTM",
+   "group": "lookahead",
+   "full": "candles_SOLUSDTM_fast"
+  },
+  {
+   "id": "walkforward_SOLUSDTM",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "SOLUSDTM",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "SOLUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  },
+  {
+   "id": "candles_STRKUSDTM_default",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_STRKUSDTM_fast",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "candles"
+  },
+  {
+   "id": "candles_STRKUSDTM_nofee",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0,
+    "maker_fee_percent": 0,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDTM_spread",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "spread_pct": 0.05,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDTM_ping",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "latency_ms": 500,
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "ablation"
+  },
+  {
+   "id": "candles_STRKUSDTM_cut",
+   "kind": "candles",
+   "tool": "run_backtest",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-05-15"
+    },
+    "ticks": false,
+    "parameters": {
+     "Fast EMA": 5,
+     "Slow EMA": 13,
+     "ATR Stop": 0.5,
+     "Reward Ratio": 1
+    },
+    "chart": true,
+    "last_trades": 0,
+    "log_lines": 20,
+    "history": false
+   },
+   "pair": "STRKUSDTM",
+   "group": "lookahead",
+   "full": "candles_STRKUSDTM_fast"
+  },
+  {
+   "id": "walkforward_STRKUSDTM",
+   "kind": "optimize",
+   "tool": "optimize_strategy",
+   "pair": "STRKUSDTM",
+   "group": "walkforward",
+   "args": {
+    "margin_fee_percent": 0.06,
+    "maker_fee_percent": 0.02,
+    "starting_balance": 10000,
+    "name": "VERIFY EMA ATR bar-close",
+    "source": {
+     "type": "exchange",
+     "exchange": "kucoin",
+     "symbol": "STRKUSDTM",
+     "category": "linear",
+     "interval": "60",
+     "from": "2026-01-01",
+     "to": "2026-09-30"
+    },
+    "ticks": false,
+    "parameters": {
+     "ATR Stop": 2,
+     "Reward Ratio": 2
+    },
+    "space": {
+     "Fast EMA": {
+      "min": 5,
+      "max": 20,
+      "step": 5
+     },
+     "Slow EMA": {
+      "min": 20,
+      "max": 60,
+      "step": 10
+     }
+    },
+    "method": "grid",
+    "objective": "return",
+    "walk_forward": {
+     "train_pct": 70
+    },
+    "top": 20,
+    "constraints": {
+     "min_trades": 1
+    }
+   }
+  }
+ ]
+}

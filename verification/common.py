@@ -8,6 +8,7 @@ import numpy as np
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEE_DEFAULT = 0.055  # percent, Bybit USDT perpetual taker (VIP 0)
+EXCHANGE = "bybit"  # verify.py --exchange; bybit keeps the original layout, others live in <exchange>/ subfolders
 
 # Liquidation (Danix LiquidationCalculator, default risk parameters):
 # price = entry x (1 - (1/leverage - MMR - taker fee - insurance)) for a long
@@ -18,14 +19,22 @@ def path(*parts):
     return os.path.join(ROOT, *parts)
 
 
+def sub(*parts):
+    """Folder of the selected exchange: danix_runs, data/candles, ... for bybit, danix_runs/kucoin, data/kucoin/candles, ..."""
+    if EXCHANGE == "bybit":
+        return path(*parts)
+    head, *rest = parts
+    return path(head, EXCHANGE, *rest)
+
+
 def load_runs():
-    with open(path("config", "runs.json")) as f:
+    with open(path("config", "runs.json" if EXCHANGE == "bybit" else f"runs_{EXCHANGE}.json")) as f:
         return json.load(f)
 
 
 def load_danix(run_id):
     """Danix output of one run (tools/collect.py keeps results, settings, source and the trades)."""
-    p = path("danix_runs", run_id + ".json")
+    p = sub("danix_runs", run_id + ".json")
     if not os.path.exists(p):
         return None
     with open(p) as f:
@@ -51,7 +60,7 @@ class Candles:
 
 def load_candles(name):
     """data/candles/<name>.csv or scenarios/<name>.csv (Danix CSV format, timestamp in seconds)."""
-    p = path("data", "candles", name + ".csv")
+    p = sub("data", "candles", name + ".csv")
     if not os.path.exists(p):
         p = path("scenarios", name + ".csv")
     rows = []
@@ -92,9 +101,9 @@ def load_ticks(symbol, day):
 
 
 def load_funding(symbol):
-    """data/funding/<symbol>.csv (tools/fetch_funding.py): Bybit funding times in ms and rates, oldest first."""
+    """data/[<exchange>/]funding/<symbol>.csv (tools/fetch_funding.py): exchange funding times in ms and rates, oldest first."""
     t, r = [], []
-    with open(path("data", "funding", symbol + ".csv")) as f:
+    with open(sub("data", "funding", symbol + ".csv")) as f:
         rd = csv.reader(f)
         next(rd)
         for x in rd:

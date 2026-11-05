@@ -1,0 +1,814 @@
+{
+ "combinations": 20,
+ "complete": true,
+ "constraints": {
+  "min_trades": 1
+ },
+ "evaluated": 20,
+ "limits": {
+  "max_runs": 2000,
+  "time_limit_sec": 600.0
+ },
+ "method": "grid",
+ "objective": "return",
+ "parameters": {
+  "ATR Stop": 2,
+  "Reward Ratio": 2
+ },
+ "passed_constraints": 19,
+ "rejected_by_constraints": 1,
+ "runs": 39,
+ "saved": false,
+ "seconds": 20.9148297,
+ "settings": {
+  "fixed_commission": 0.0,
+  "funding": {
+   "exchange": "kucoin",
+   "points": 882,
+   "source": "exchange",
+   "symbol": "SOLUSDTM"
+  },
+  "futures_fee_source": "parameters",
+  "maker_fee_percent": 0.02,
+  "margin_fee_percent": 0.06,
+  "percent_commission": 0.0,
+  "spot_fee_source": "default 0.1% maker / taker (Bybit / Binance spot VIP 0): the strategy has no Spot nodes",
+  "spot_maker_fee_percent": 0.1,
+  "spot_taker_fee_percent": 0.1,
+  "starting_balance": 10000.0
+ },
+ "source": {
+  "category": "linear",
+  "exchange": "kucoin",
+  "from": "2026-01-01 00:00",
+  "interval": "60",
+  "loaded": 6552,
+  "symbol": "SOLUSDTM",
+  "timeframe": "1h",
+  "to": "2026-10-01 00:00",
+  "type": "exchange",
+  "warmup": 500,
+  "warmup_mode": "auto",
+  "warmup_needed": 181,
+  "warmup_needed_by": "EMA (Period 60 (x3 for the EMA to settle), Index 1)"
+ },
+ "space": {
+  "Fast EMA": [
+   5,
+   10,
+   15,
+   20
+  ],
+  "Slow EMA": [
+   20,
+   30,
+   40,
+   50,
+   60
+  ]
+ },
+ "strategy": "VERIFY EMA ATR bar-close.json",
+ "threads": 12,
+ "top": [
+  {
+   "parameters": {
+    "Fast EMA": 5,
+    "Slow EMA": 30
+   },
+   "rank": 1,
+   "stability": {
+    "mean_objective": 0.0049,
+    "mean_return_pct": 0.0049,
+    "min_objective": -0.505968,
+    "neighbors": 3,
+    "ratio": 0.003
+   },
+   "test": {
+    "closed_positions": 46,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.805395,
+    "objective": 1.617345,
+    "open_positions": 0,
+    "profit_factor": 1.618754,
+    "return_pct": 1.617345,
+    "trades": 46,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 100,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.526246,
+    "objective": 1.777275,
+    "open_positions": 0,
+    "profit_factor": 1.211228,
+    "return_pct": 1.777275,
+    "trades": 100,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 10,
+    "Slow EMA": 20
+   },
+   "rank": 2,
+   "stability": {
+    "mean_objective": 0.101566,
+    "mean_return_pct": 0.101566,
+    "min_objective": -0.447676,
+    "neighbors": 3,
+    "ratio": 0.088
+   },
+   "test": {
+    "closed_positions": 40,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.622585,
+    "objective": 1.624663,
+    "open_positions": 0,
+    "profit_factor": 1.664455,
+    "return_pct": 1.624663,
+    "trades": 40,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 86,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.390561,
+    "objective": 1.156935,
+    "open_positions": 0,
+    "profit_factor": 1.13736,
+    "return_pct": 1.156935,
+    "trades": 86,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 15,
+    "Slow EMA": 30
+   },
+   "rank": 3,
+   "stability": {
+    "mean_objective": -0.804081,
+    "mean_return_pct": -0.804081,
+    "min_objective": -2.222149,
+    "neighbors": 4,
+    "ratio": -0.703
+   },
+   "test": {
+    "closed_positions": 31,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.311919,
+    "objective": 0.583707,
+    "open_positions": 0,
+    "profit_factor": 1.24965,
+    "return_pct": 0.583707,
+    "trades": 31,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 62,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.70864,
+    "objective": 1.143355,
+    "open_positions": 0,
+    "profit_factor": 1.166714,
+    "return_pct": 1.143355,
+    "trades": 62,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 5,
+    "Slow EMA": 20
+   },
+   "rank": 4,
+   "stability": {
+    "mean_objective": 1.467105,
+    "mean_return_pct": 1.467105,
+    "min_objective": 1.156935,
+    "neighbors": 2,
+    "ratio": 1.515
+   },
+   "test": {
+    "closed_positions": 57,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.651457,
+    "objective": 0.722119,
+    "open_positions": 0,
+    "profit_factor": 1.199784,
+    "return_pct": 0.722119,
+    "trades": 57,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 133,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.819717,
+    "objective": 0.968345,
+    "open_positions": 0,
+    "profit_factor": 1.086216,
+    "return_pct": 0.968345,
+    "trades": 133,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 5,
+    "Slow EMA": 50
+   },
+   "rank": 5,
+   "stability": {
+    "mean_objective": -1.19033,
+    "mean_return_pct": -1.19033,
+    "min_objective": -1.925406,
+    "neighbors": 3,
+    "ratio": -1.371
+   },
+   "test": {
+    "closed_positions": 32,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.73088,
+    "objective": 0.867484,
+    "open_positions": 0,
+    "profit_factor": 1.411631,
+    "return_pct": 0.867484,
+    "trades": 32,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 79,
+    "liquidations": 0,
+    "max_drawdown_pct": 1.915268,
+    "objective": 0.867909,
+    "open_positions": 0,
+    "profit_factor": 1.125293,
+    "return_pct": 0.867909,
+    "trades": 79,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 15,
+    "Slow EMA": 20
+   },
+   "rank": 6,
+   "stability": {
+    "mean_objective": 0.766763,
+    "mean_return_pct": 0.766763,
+    "min_objective": 0.0,
+    "neighbors": 3,
+    "ratio": -3.55
+   },
+   "test": {
+    "closed_positions": 35,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.765439,
+    "objective": 1.223174,
+    "open_positions": 0,
+    "profit_factor": 1.507382,
+    "return_pct": 1.223174,
+    "trades": 35,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 72,
+    "liquidations": 0,
+    "max_drawdown_pct": 3.033821,
+    "objective": -0.215972,
+    "open_positions": 0,
+    "profit_factor": 0.967741,
+    "return_pct": -0.215972,
+    "trades": 72,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 15,
+    "Slow EMA": 40
+   },
+   "rank": 7,
+   "stability": {
+    "mean_objective": -1.013656,
+    "mean_return_pct": -1.013656,
+    "min_objective": -2.417936,
+    "neighbors": 4,
+    "ratio": 3.067
+   },
+   "test": {
+    "closed_positions": 25,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.63492,
+    "objective": 0.954883,
+    "open_positions": 0,
+    "profit_factor": 1.498981,
+    "return_pct": 0.954883,
+    "trades": 25,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 58,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.11475,
+    "objective": -0.330527,
+    "open_positions": 0,
+    "profit_factor": 0.943473,
+    "return_pct": -0.330527,
+    "trades": 58,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 10,
+    "Slow EMA": 30
+   },
+   "rank": 8,
+   "stability": {
+    "mean_objective": 0.898897,
+    "mean_return_pct": 0.898897,
+    "min_objective": -0.481976,
+    "neighbors": 4,
+    "ratio": -2.008
+   },
+   "test": {
+    "closed_positions": 33,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.633654,
+    "objective": 1.824996,
+    "open_positions": 0,
+    "profit_factor": 1.907141,
+    "return_pct": 1.824996,
+    "trades": 33,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 70,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.756437,
+    "objective": -0.447676,
+    "open_positions": 0,
+    "profit_factor": 0.935729,
+    "return_pct": -0.447676,
+    "trades": 70,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 10,
+    "Slow EMA": 40
+   },
+   "rank": 9,
+   "stability": {
+    "mean_objective": -0.605947,
+    "mean_return_pct": -0.605947,
+    "min_objective": -1.139616,
+    "neighbors": 4,
+    "ratio": 1.257
+   },
+   "test": {
+    "closed_positions": 29,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.952377,
+    "objective": 1.405461,
+    "open_positions": 0,
+    "profit_factor": 1.722188,
+    "return_pct": 1.405461,
+    "trades": 29,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 67,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.855373,
+    "objective": -0.481976,
+    "open_positions": 0,
+    "profit_factor": 0.933279,
+    "return_pct": -0.481976,
+    "trades": 67,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 5,
+    "Slow EMA": 40
+   },
+   "rank": 10,
+   "stability": {
+    "mean_objective": 0.721069,
+    "mean_return_pct": 0.721069,
+    "min_objective": -0.481976,
+    "neighbors": 3,
+    "ratio": -1.425
+   },
+   "test": {
+    "closed_positions": 40,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.931051,
+    "objective": 0.989434,
+    "open_positions": 0,
+    "profit_factor": 1.378619,
+    "return_pct": 0.989434,
+    "trades": 40,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 93,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.817421,
+    "objective": -0.505968,
+    "open_positions": 0,
+    "profit_factor": 0.938674,
+    "return_pct": -0.505968,
+    "trades": 93,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 15,
+    "Slow EMA": 60
+   },
+   "rank": 11,
+   "stability": {
+    "mean_objective": -1.997404,
+    "mean_return_pct": -1.997404,
+    "min_objective": -2.475046,
+    "neighbors": 3,
+    "ratio": 1.938
+   },
+   "test": {
+    "closed_positions": 22,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.819006,
+    "objective": 0.333807,
+    "open_positions": 0,
+    "profit_factor": 1.187575,
+    "return_pct": 0.333807,
+    "trades": 22,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 45,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.283406,
+    "objective": -1.030774,
+    "open_positions": 0,
+    "profit_factor": 0.81905,
+    "return_pct": -1.030774,
+    "trades": 45,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 20,
+    "Slow EMA": 50
+   },
+   "rank": 12,
+   "stability": {
+    "mean_objective": -1.978367,
+    "mean_return_pct": -1.978367,
+    "min_objective": -2.417936,
+    "neighbors": 3,
+    "ratio": 1.783
+   },
+   "test": {
+    "closed_positions": 22,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.761039,
+    "objective": 0.449899,
+    "open_positions": 0,
+    "profit_factor": 1.251803,
+    "return_pct": 0.449899,
+    "trades": 22,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 42,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.453609,
+    "objective": -1.109334,
+    "open_positions": 0,
+    "profit_factor": 0.796288,
+    "return_pct": -1.109334,
+    "trades": 42,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 10,
+    "Slow EMA": 50
+   },
+   "rank": 13,
+   "stability": {
+    "mean_objective": -1.096795,
+    "mean_return_pct": -1.096795,
+    "min_objective": -2.475046,
+    "neighbors": 4,
+    "ratio": 0.962
+   },
+   "test": {
+    "closed_positions": 26,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.971448,
+    "objective": 0.979298,
+    "open_positions": 0,
+    "profit_factor": 1.505039,
+    "return_pct": 0.979298,
+    "trades": 26,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 70,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.497426,
+    "objective": -1.139616,
+    "open_positions": 0,
+    "profit_factor": 0.848624,
+    "return_pct": -1.139616,
+    "trades": 70,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 20,
+    "Slow EMA": 60
+   },
+   "rank": 14,
+   "stability": {
+    "mean_objective": -1.070054,
+    "mean_return_pct": -1.070054,
+    "min_objective": -1.109334,
+    "neighbors": 2,
+    "ratio": 0.878
+   },
+   "test": {
+    "closed_positions": 23,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.592051,
+    "objective": 0.513636,
+    "open_positions": 0,
+    "profit_factor": 1.286357,
+    "return_pct": 0.513636,
+    "trades": 23,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 40,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.55839,
+    "objective": -1.219098,
+    "open_positions": 0,
+    "profit_factor": 0.762431,
+    "return_pct": -1.219098,
+    "trades": 40,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 5,
+    "Slow EMA": 60
+   },
+   "rank": 15,
+   "stability": {
+    "mean_objective": -0.803568,
+    "mean_return_pct": -0.803568,
+    "min_objective": -2.475046,
+    "neighbors": 2,
+    "ratio": 0.417
+   },
+   "test": {
+    "closed_positions": 33,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.767062,
+    "objective": 1.102916,
+    "open_positions": 0,
+    "profit_factor": 1.537298,
+    "return_pct": 1.102916,
+    "trades": 33,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 78,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.892361,
+    "objective": -1.925406,
+    "open_positions": 0,
+    "profit_factor": 0.75889,
+    "return_pct": -1.925406,
+    "trades": 78,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 20,
+    "Slow EMA": 30
+   },
+   "rank": 16,
+   "stability": {
+    "mean_objective": -0.42486,
+    "mean_return_pct": -0.42486,
+    "min_objective": -2.417936,
+    "neighbors": 3,
+    "ratio": 0.191
+   },
+   "test": {
+    "closed_positions": 24,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.638246,
+    "objective": 1.120713,
+    "open_positions": 0,
+    "profit_factor": 1.619099,
+    "return_pct": 1.120713,
+    "trades": 24,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 57,
+    "liquidations": 0,
+    "max_drawdown_pct": 3.073599,
+    "objective": -2.222149,
+    "open_positions": 0,
+    "profit_factor": 0.696867,
+    "return_pct": -2.222149,
+    "trades": 57,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 15,
+    "Slow EMA": 50
+   },
+   "rank": 17,
+   "stability": {
+    "mean_objective": -0.902563,
+    "mean_return_pct": -0.902563,
+    "min_objective": -1.139616,
+    "neighbors": 4,
+    "ratio": 0.393
+   },
+   "test": {
+    "closed_positions": 24,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.488811,
+    "objective": 1.451992,
+    "open_positions": 0,
+    "profit_factor": 1.937881,
+    "return_pct": 1.451992,
+    "trades": 24,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 51,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.83893,
+    "objective": -2.298067,
+    "open_positions": 0,
+    "profit_factor": 0.653427,
+    "return_pct": -2.298067,
+    "trades": 51,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 20,
+    "Slow EMA": 40
+   },
+   "rank": 18,
+   "stability": {
+    "mean_objective": -1.22067,
+    "mean_return_pct": -1.22067,
+    "min_objective": -2.222149,
+    "neighbors": 3,
+    "ratio": 0.505
+   },
+   "test": {
+    "closed_positions": 24,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.53114,
+    "objective": 1.568368,
+    "open_positions": 0,
+    "profit_factor": 1.981443,
+    "return_pct": 1.568368,
+    "trades": 24,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 49,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.853417,
+    "objective": -2.417936,
+    "open_positions": 0,
+    "profit_factor": 0.634586,
+    "return_pct": -2.417936,
+    "trades": 49,
+    "unrealized_pnl": 0.0
+   }
+  },
+  {
+   "parameters": {
+    "Fast EMA": 10,
+    "Slow EMA": 60
+   },
+   "rank": 19,
+   "stability": {
+    "mean_objective": -1.365265,
+    "mean_return_pct": -1.365265,
+    "min_objective": -1.925406,
+    "neighbors": 3,
+    "ratio": 0.552
+   },
+   "test": {
+    "closed_positions": 28,
+    "liquidations": 0,
+    "max_drawdown_pct": 0.829966,
+    "objective": 0.499786,
+    "open_positions": 0,
+    "profit_factor": 1.230016,
+    "return_pct": 0.499786,
+    "trades": 28,
+    "unrealized_pnl": 0.0
+   },
+   "train": {
+    "closed_positions": 58,
+    "liquidations": 0,
+    "max_drawdown_pct": 2.859754,
+    "objective": -2.475046,
+    "open_positions": 0,
+    "profit_factor": 0.640083,
+    "return_pct": -2.475046,
+    "trades": 58,
+    "unrealized_pnl": 0.0
+   }
+  }
+ ],
+ "walk_forward": {
+  "note": "test runs on the remaining candles from a clean balance; its indicators are warmed up on the last train candles",
+  "test": {
+   "candles": 1966,
+   "from": "2026-07-11 02:00",
+   "to": "2026-09-30 23:00"
+  },
+  "train": {
+   "candles": 4586,
+   "from": "2026-01-01 00:00",
+   "to": "2026-07-11 01:00"
+  },
+  "train_pct": 70.0
+ },
+ "id": "walkforward_SOLUSDTM",
+ "args": {
+  "margin_fee_percent": 0.06,
+  "maker_fee_percent": 0.02,
+  "starting_balance": 10000,
+  "name": "VERIFY EMA ATR bar-close",
+  "source": {
+   "type": "exchange",
+   "exchange": "kucoin",
+   "symbol": "SOLUSDTM",
+   "category": "linear",
+   "interval": "60",
+   "from": "2026-01-01",
+   "to": "2026-09-30"
+  },
+  "ticks": false,
+  "parameters": {
+   "ATR Stop": 2,
+   "Reward Ratio": 2
+  },
+  "space": {
+   "Fast EMA": {
+    "min": 5,
+    "max": 20,
+    "step": 5
+   },
+   "Slow EMA": {
+    "min": 20,
+    "max": 60,
+    "step": 10
+   }
+  },
+  "method": "grid",
+  "objective": "return",
+  "walk_forward": {
+   "train_pct": 70
+  },
+  "top": 20,
+  "constraints": {
+   "min_trades": 1
+  }
+ }
+}

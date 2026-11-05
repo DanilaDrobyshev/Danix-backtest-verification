@@ -1,13 +1,21 @@
-"""danix_runs/raw/*.json (answers of the Danix command line) -> danix_runs/<id>.json, data/candles/*.csv, SHA256SUMS."""
+"""danix_runs/raw/*.json (answers of the Danix command line) -> danix_runs/<id>.json, data/candles/*.csv, SHA256SUMS.
+
+    python tools/collect.py [--exchange kucoin]   (kucoin: config/runs_kucoin.json, danix_runs/kucoin, data/kucoin)
+"""
 import csv
 import glob
 import hashlib
 import json
 import os
 import shutil
+import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW = os.path.join(ROOT, "danix_runs", "raw")
+EXCHANGE = sys.argv[sys.argv.index("--exchange") + 1].lower() if "--exchange" in sys.argv else "bybit"
+CONFIG = os.path.join(ROOT, "config", "runs.json" if EXCHANGE == "bybit" else f"runs_{EXCHANGE}.json")
+RUNS = os.path.join(ROOT, "danix_runs", *([] if EXCHANGE == "bybit" else [EXCHANGE]))
+DATA = os.path.join(ROOT, "data", *([] if EXCHANGE == "bybit" else [EXCHANGE]))
+RAW = os.path.join(RUNS, "raw")
 
 
 def sha(p):
@@ -28,18 +36,18 @@ def check_exchange(name, args, d):
 
 
 def main():
-    cfg = json.load(open(os.path.join(ROOT, "config", "runs.json")))
+    cfg = json.load(open(CONFIG))
     # before anything is written: a run on the wrong exchange must not overwrite data/candles
     for name, args, p in [(e["file"], e["args"], os.path.join(RAW, "candles_" + e["file"] + ".json")) for e in cfg["exports"]] +             [(r["id"], r["args"], os.path.join(RAW, r["id"] + ".json")) for r in cfg["runs"]]:
         if os.path.exists(p):
             check_exchange(name, args, json.load(open(p, encoding="utf-8-sig")))
-    os.makedirs(os.path.join(ROOT, "data", "candles"), exist_ok=True)
+    os.makedirs(os.path.join(DATA, "candles"), exist_ok=True)
     for e in cfg["exports"]:
         p = os.path.join(RAW, "candles_" + e["file"] + ".json")
         if not os.path.exists(p):
             continue
         rows = json.load(open(p, encoding="utf-8-sig"))["candles"]
-        with open(os.path.join(ROOT, "data", "candles", e["file"]), "w", newline="") as f:
+        with open(os.path.join(DATA, "candles", e["file"]), "w", newline="") as f:
             w = csv.writer(f, lineterminator="\n")
             w.writerow(["timestamp_ms", "open", "high", "low", "close", "volume"])
             w.writerows([[int(r[0])] + r[1:6] for r in rows])
@@ -60,13 +68,13 @@ def main():
         else:
             out = d
         out["id"], out["args"] = r["id"], r["args"]
-        with open(os.path.join(ROOT, "danix_runs", r["id"] + ".json"), "w") as f:
+        with open(os.path.join(RUNS, r["id"] + ".json"), "w") as f:
             json.dump(out, f, indent=1)
     if os.path.exists(os.path.join(RAW, "_meta.json")):
-        shutil.copy(os.path.join(RAW, "_meta.json"), os.path.join(ROOT, "danix_runs", "_meta.json"))
-    files = sorted(glob.glob(os.path.join(ROOT, "data", "candles", "*.csv")) + glob.glob(os.path.join(ROOT, "data", "funding", "*.csv"))
-                   + glob.glob(os.path.join(ROOT, "scenarios", "*.csv")))
-    with open(os.path.join(ROOT, "data", "SHA256SUMS.txt"), "w") as f:
+        shutil.copy(os.path.join(RAW, "_meta.json"), os.path.join(RUNS, "_meta.json"))
+    files = sorted(glob.glob(os.path.join(DATA, "candles", "*.csv")) + glob.glob(os.path.join(DATA, "funding", "*.csv"))
+                   + (glob.glob(os.path.join(ROOT, "scenarios", "*.csv")) if EXCHANGE == "bybit" else []))
+    with open(os.path.join(DATA, "SHA256SUMS.txt"), "w") as f:
         for p in files:
             f.write(f"{sha(p)}  {os.path.relpath(p, ROOT).replace(os.sep, '/')}\n")
     print(f"collected {len(cfg['runs'])} runs, {len(files)} data files")
